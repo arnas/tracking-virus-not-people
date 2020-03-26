@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.info-text {
+  margin: 4px;
+}
+
+.info-text:first-child {
+  margin-left: 10px;
+}
+
+

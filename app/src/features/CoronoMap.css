@@ -1,0 +1,40 @@
+.leaflet-container {
+  height: 90vh;
+  width: 100%;
+}
+
+.marker-cluster-medium {
+  background-color: rgba(248, 4, 4, 0.6);
+}
+
+.marker-cluster-medium div {
+  background-color: rgba(248, 4, 4, 0.6);
+  width: 50px;
+  height: 50px;
+  margin-left: -5px;
+  margin-top: -5px;
+  border-radius: 26px;
+}
+
+.marker-cluster-medium span {
+  line-height: 50px;
+}
+
+.marker-cluster-small {
+  background-color: rgba(248, 4, 4, 0.6);
+}
+
+.marker-cluster-small div {
+  background-color: rgba(248, 4, 4, 0.6);
+}
+
+.circle-tooltip {
+  background-color: transparent;
+  border: transparent;
+  box-shadow: none;
+  line-height: 25px;
+}
+
+.leaflet-pane .leaflet-marker-pane img {
+  z-index: auto !important;
+}

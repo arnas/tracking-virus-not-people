@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "city": "Vilnius",
+    "address": "Savanorių pr. 124",
+    "name": "„Statyk ir važiuok“ aikštelė šalia „Cirkle K“",
+    "description": "",
+    "latitude": 54.6602278,
+    "longitude": 25.2327821
+  },
+  {
+    "id": 2,
+    "city": "Vilnius",
+    "address": "V. Gerulaičio g. 1",
+    "name": "„Statyk ir važiuok“ aikštelė šalia Siemens“ arenos",
+    "description": "",
+    "latitude": 54.7176561,
+    "longitude": 25.2834522
+  },
+  {
+    "id": 3,
+    "city": "Vilnius",
+    "address": "",
+    "name": "Aikštelė šalia Valakampių I paplūdimio",
+    "description": "",
+    "latitude": 54.7307406,
+    "longitude": 25.2966169
+  },
+  {
+    "id": 4,
+    "city": "Kaunas",
+    "address": "Jonavos g. 51A",
+    "name": "Kauno kempingas",
+    "description": "",
+    "latitude": 54.9345903,
+    "longitude": 23.9154575
+  },
+  {
+    "id": 5,
+    "city": "Klaipėda",
+    "address": "Dubysos g. 10",
+    "name": "Aikštelė prie „Švyturio“ arenos",
+    "description": "",
+    "latitude": 55.6874172,
+    "longitude": 21.149366
+  },
+  {
+    "id": 6,
+    "city": "Šiauliai",
+    "address": "Jablonskio g. 16",
+    "name": "Aikštelė prie Šiaulių arenos",
+    "description": "",
+    "latitude": 55.9202149,
+    "longitude": 23.2805633
+  },
+  {
+    "id": 7,
+    "city": "Panevėžys",
+    "address": "Parko g. 12",
+    "name": "Aikštelė prie „Cido“ arenos",
+    "description": "",
+    "latitude": 55.7334167,
+    "longitude": 24.3372809
+  },
+  {
+    "id": 8,
+    "city": "Alytus",
+    "address": "Pramonės g. 1B",
+    "name": "Kultūros centro aikštelė",
+    "description": "",
+    "latitude": 54.4177305,
+    "longitude": 24.019283
+  },
+  {
+    "id": 9,
+    "city": "Marijampolė",
+    "address": "Kauno g. 125",
+    "name": "Šalia futbolo maniežo",
+    "description": "",
+    "latitude": 54.5753852,
+    "longitude": 23.3671175
+  },
+  {
+    "id": 10,
+    "city": "Utena",
+    "address": "Užpalių g. 100",
+    "name": "„Utenio“ stadiono aikštelė",
+    "description": "",
+    "latitude": 55.5158342,
+    "longitude": 25.607237
+  },
+  {
+    "id": 11,
+    "city": "Tauragė",
+    "address": "V. Kudirkos g. 2",
+    "name": "Aikštelė šalia Raudono kryžiaus draugijos pastato",
+    "description": "",
+    "latitude": 55.253942,
+    "longitude": 22.2801445
+  },
+  {
+    "id": 12,
+    "city": "Telšiai",
+    "address": "Žemaitės g. 34",
+    "name": null,
+    "description": "Aikštelė tarp Telšių apskrities vyriausiojo policijos komisariato ir viaduko, šalia buvusio karinio miestelio.",
+    "latitude": 55.9881521,
+    "longitude": 22.2373316
+  }
+]
