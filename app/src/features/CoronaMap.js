@@ -48,6 +48,7 @@ export function CoronaMap() {
     const map = mapRef.current;
     if (map) {
       let zoom = map.leafletElement.getZoom();
+      console.log(zoom);
       switch (zoom) {
         case 7:
           setRadius(7000);
@@ -65,20 +66,20 @@ export function CoronaMap() {
           setRadius(1000);
           break;
         case 12:
-          setRadius(500);
-          break;
-        case 13:
           setRadius(400);
           break;
-        case 14:
-          setRadius(300);
-          break;
-        case 15:
+        case 13:
           setRadius(200);
           break;
-        case 16:
+        case 14:
           setRadius(80);
           break;
+        case 15:
+          setRadius(50);
+          break;
+        case 16:
+          setRadius(40);
+         break;
         default: setRadius(10);
       }
     }
