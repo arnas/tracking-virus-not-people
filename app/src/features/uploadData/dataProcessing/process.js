@@ -71,7 +71,8 @@ const diminishingImportance = (raw, limit, speed) => {
 const process = (places) => {
     const componentsValues = [];
     const homePlacesNames = getHomePlacesNames(places);
-
+    const existingComponents = new Set();
+    
     for (let i = 0; i < places.length; i++) {
         if (homePlacesNames.indexOf(places[i].location.name) !== -1) {
             continue;
@@ -83,6 +84,14 @@ const process = (places) => {
             const distanceFactor = diminishingImportance(topCases[j].distance, MAX_DISTANCE, DISTANCE_DIMINISHING_SPEED);
             const timeFactor = diminishingImportance(topCases[j].timePassed, MAX_TIME, TIME_DIMINISHING_SPEED);
             const score = durationMultiplier * calculateHarmonicMean(distanceFactor, timeFactor) / 2;
+            
+            const identifier = `${places[i].address}-${topCases[j].address}-${places[i].visitEndTs}-${topCases[j].timestamp}`;
+            
+            if (existingComponents.has(identifier))
+                continue;
+            
+            existingComponents.add(identifier);
+            
             componentsValues.push({
                 score,
                 duration,
@@ -96,6 +105,8 @@ const process = (places) => {
             });
         }
     }
+    
+    const componentsWith
     const sortedComponents = componentsValues.sort((a, b) => b.score - a.score).filter((a,idx) => a.visitedLocation.visitEndTs > a.case.timestamp).filter((a,idx) => idx < 3);
     const score = (W1 * sortedComponents[0].score + W2 * sortedComponents[1].score + W3 * sortedComponents[2].score) * (1 - OTHER_FACTORS_RATIO);
 
