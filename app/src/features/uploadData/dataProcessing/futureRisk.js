@@ -2,8 +2,6 @@ const QUARANTINE_START = 1584309600;
 
 const getFutureRiskScores = places => {
   const homePlacesNames = getHomePlacesNames(places);
-  console.log("HOME/WORK Places:");
-  console.log(homePlacesNames);
 
   const quarantinePlaces = places.filter(
     p => p.visitStartTs > QUARANTINE_START
