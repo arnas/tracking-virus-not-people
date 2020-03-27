@@ -315,8 +315,8 @@
     "name": "Maxima",
     "city": "Telšiai",
     "time": "3/10/2020 6:00",
-    "latitude": 56.30833225,
-    "longitude": 22.3387962555,
+    "latitude": 55.9842972,
+    "longitude": 22.2521046,
     "timestamp": 1583812800.0
   },
   {
@@ -1010,7 +1010,7 @@
     "timestamp": 1584799200.0
   },
   {
-    "id": 101,
+    "id": 102,
     "address": "H. Manto g. 84",
     "name": "Klaipėdos universitetinė ligoninė",
     "city": "Klaipėda",
