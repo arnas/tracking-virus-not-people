@@ -232,10 +232,13 @@ export function ResultDisplay(props) {
             size="small"
             bordered
             dataSource={[
-              "Kuo mažiau lankykitės viešose vietose.",
-              "Venkite gyvo kontakto su žmonėmis, kurie negyvena toje pačioje vietoje.",
-              "Dažnai plaukite rankas.",
-              "Jei yra įmanoma dirbkite nuotoliniu būdu."
+              "Karantinas pratęsiamas dviem savaitėms - iki balandžio 13d.",
+              "Parkuose ir viešose vietose lankykitės ne didesnėse nei dviejų asmenų grupėse.",
+              "Į prekybos paslaugų vietas eikite vienas.",
+              "Viešose vietose dėvėkite apsaugos kaukes, respiratorius arva kitas nosį ir burną dengiančias priemones.",
+              "Jei grįžote iš užsienio - jums privalomas 14 dienų karantinas.",
+              "Iki gegužės 1 d. 00:00 val. degalų pardavimo vietose gali būti prekiaujama benzinu, kuriame yra mažiau nei 10 procentų biodegalų.",
+              "Grįžus iš užsienio ir nesilaikant karantino gresia baudžiamoji atsakomybė, o už smulkesnius nusižengimus policija gali skirti pinigines baudas."
             ]}
             renderItem={item => <List.Item>{item}</List.Item>}
           />
