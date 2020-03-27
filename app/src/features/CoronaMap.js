@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Map,
   TileLayer,
@@ -19,7 +19,7 @@ const TILE_LAYER_URL =
 
 export function CoronaMap() {
   const position = [55.2854062,23.9327383];
-  let [showTooltip, setShowTooltip] = React.useState(false);
+  const [initialRadius, setRadius] = useState(4000);
   const initialZoom = 8;
   const minZoom = 7;
   let mapRef = React.createRef();
@@ -28,12 +28,6 @@ export function CoronaMap() {
     iconSize: [24, 24],
     iconAnchor: [12,24]
 });
-  const renderMarkers = () => {
-    const map = mapRef.current;
-    if (map) {
-      setShowTooltip(map.leafletElement.getZoom() > 11 ? true : false);
-    }
-  };
 
   const renderDriveIns = () => {
     return driveIn.map(item => (
@@ -48,6 +42,46 @@ export function CoronaMap() {
         </Popup>
       </Marker>
     ));
+  };
+
+  const renderMarkers = () => {
+    const map = mapRef.current;
+    if (map) {
+      let zoom = map.leafletElement.getZoom();
+      switch (zoom) {
+        case 7:
+          setRadius(7000);
+          break;
+        case 8:
+          setRadius(4000);
+          break;
+        case 9:
+          setRadius(3000);
+          break;
+        case 10:
+          setRadius(2000);
+          break;
+        case 11:
+          setRadius(1000);
+          break;
+        case 12:
+          setRadius(500);
+          break;
+        case 13:
+          setRadius(400);
+          break;
+        case 14:
+          setRadius(300);
+          break;
+        case 15:
+          setRadius(200);
+          break;
+        case 16:
+          setRadius(80);
+          break;
+        default: setRadius(10);
+      }
+    }
   };
 
   return (
@@ -65,16 +99,20 @@ export function CoronaMap() {
           <Circle
             key={item.id}
             center={[item.latitude, item.longitude]}
-            color="red"
-            fillColor="red"
-            radius={200}
+            color="#ffffff00"
+            opacity={0.3}
+            weight={7}
+      
+            fillColor="#f60404"
+            fillOpacity={0.6}
+            radius={initialRadius}
           >
             <Tooltip
               className="circle-tooltip"
               permanent={true}
               direction="center"
             >
-              {showTooltip ? <span>1</span> : <span />}
+               <span>1</span>
             </Tooltip>
             <Popup>
               <p>
