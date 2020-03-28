@@ -1696,5 +1696,27 @@
     "latitude": 54.6870709,
     "longitude": 25.2787275,
     "timestamp": 1584612000.0
+  },
+  {
+    "id": 165,
+    "case_id": 141,
+    "address": "Žemaitės al. 12",
+    "name": "LIDL",
+    "city": "Kretinga",
+    "time": "3/14/20 14:00",
+    "latitude": 55.8942178,
+    "longitude": 21.2538424,
+    "timestamp": 1584194400.0
+  },
+  {
+    "id": 166,
+    "case_id": 141,
+    "address": "Telšių g.2B, Rainiai",
+    "name": "Rainių degalinė Milda",
+    "city": "Telšių raj.",
+    "time": "3/15/20 14:00",
+    "latitude": 55.9997949,
+    "longitude": 22.2394213,
+    "timestamp": 1584280800.0
   }
 ]
