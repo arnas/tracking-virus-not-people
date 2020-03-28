@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { Modal } from "antd";
-import { ResultDisplay } from "./ResultsDisplay";
+import { Modal } from 'antd';
+import { ResultDisplay } from './ResultsDisplay';
 
 export function ResultsModal(props) {
   return (
@@ -13,9 +13,7 @@ export function ResultsModal(props) {
         onCancel={props.handleClose}
         footer={null}
       >
-        <ResultDisplay
-          score={props.score}
-        />
+        <ResultDisplay score={props.score} />
       </Modal>
     </div>
   );

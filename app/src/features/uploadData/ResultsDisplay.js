@@ -1,5 +1,5 @@
-import React from "react";
-import moment from "moment";
+import React from 'react';
+import moment from 'moment';
 
 import {
   Alert,
@@ -11,89 +11,85 @@ import {
   Table,
   Tabs,
   Tag,
-  List
-} from "antd";
+  List,
+} from 'antd';
 import {
   FacebookOutlined,
   LinkedinOutlined,
-  TwitterOutlined
-} from "@ant-design/icons";
-import shortid from "shortid";
+  TwitterOutlined,
+} from '@ant-design/icons';
+import shortid from 'shortid';
 
 const { TabPane } = Tabs;
 
-const getDate = function(d) {
-  var format = "YYYY-MM-DD HH:mm";
-  if (
-    moment(d)
-      .startOf("day")
-      .valueOf() === moment(d).valueOf()
-  ) {
-    format = "YYYY-MM-DD";
+const getDate = function (d) {
+  var format = 'YYYY-MM-DD HH:mm';
+  if (moment(d).startOf('day').valueOf() === moment(d).valueOf()) {
+    format = 'YYYY-MM-DD';
   }
   return moment(d).format(format);
 };
 
 const columns = [
   {
-    title: "Lankyta vieta",
-    dataIndex: ["visitedLocation", "location", "address"],
-    rowKey: () => shortid()
+    title: 'Lankyta vieta',
+    dataIndex: ['visitedLocation', 'location', 'address'],
+    rowKey: () => shortid(),
   },
   {
-    title: "Laikas",
-    dataIndex: ["visitedLocation", "visitEndTs"],
-    render: time => moment.unix(time).format("YYYY-MM-DD HH:mm"),
-    rowKey: () => shortid()
+    title: 'Laikas',
+    dataIndex: ['visitedLocation', 'visitEndTs'],
+    render: (time) => moment.unix(time).format('YYYY-MM-DD HH:mm'),
+    rowKey: () => shortid(),
   },
   {
-    title: "Rizikinga vieta",
-    dataIndex: ["case", "address"]
+    title: 'Rizikinga vieta',
+    dataIndex: ['case', 'address'],
   },
   {
-    title: "Užsikrėtusio žmogaus lankymosi laikas",
-    dataIndex: ["case", "time"],
-    render: time => getDate(moment(time, "MM/DD/YYYY h:mm")),
-    rowKey: () => shortid()
+    title: 'Užsikrėtusio žmogaus lankymosi laikas',
+    dataIndex: ['case', 'time'],
+    render: (time) => getDate(moment(time, 'MM/DD/YYYY h:mm')),
+    rowKey: () => shortid(),
   },
   {
-    title: "Koeficientas",
-    dataIndex: "score",
-    key: "score",
-    render: score => Number(score.toFixed(5) * 100).toFixed(2) + " %",
-    rowKey: () => shortid()
-  }
+    title: 'Koeficientas',
+    dataIndex: 'score',
+    key: 'score',
+    render: (score) => Number(score.toFixed(5) * 100).toFixed(2) + ' %',
+    rowKey: () => shortid(),
+  },
 ];
 
 const visitedColumns = [
   {
-    title: "Lankyta vieta",
-    dataIndex: ["location", "name"],
-    rowKey: () => shortid()
+    title: 'Lankyta vieta',
+    dataIndex: ['location', 'name'],
+    rowKey: () => shortid(),
   },
   {
-    title: "Adresas",
-    dataIndex: ["location", "address"],
-    rowKey: () => shortid()
+    title: 'Adresas',
+    dataIndex: ['location', 'address'],
+    rowKey: () => shortid(),
   },
   {
-    title: "Laikas",
-    dataIndex: ["visitStartTs"],
-    render: time => moment.unix(time).format("YYYY-MM-DD HH:mm"),
-    rowKey: () => shortid()
+    title: 'Laikas',
+    dataIndex: ['visitStartTs'],
+    render: (time) => moment.unix(time).format('YYYY-MM-DD HH:mm'),
+    rowKey: () => shortid(),
   },
   {
-    title: "Praleistas laikas",
-    dataIndex: ["timeSpent"],
-    render: hours => `${hours.toFixed(2)}h`,
-    rowKey: () => shortid()
+    title: 'Praleistas laikas',
+    dataIndex: ['timeSpent'],
+    render: (hours) => `${hours.toFixed(2)}h`,
+    rowKey: () => shortid(),
   },
   {
-    title: "Vietos aptikimo užtikrintumas",
-    dataIndex: ["location", "locationConfidence"],
-    render: locationConfidence => locationConfidence.toFixed(2) + " %",
-    rowKey: () => shortid()
-  }
+    title: 'Vietos aptikimo užtikrintumas',
+    dataIndex: ['location', 'locationConfidence'],
+    render: (locationConfidence) => locationConfidence.toFixed(2) + ' %',
+    rowKey: () => shortid(),
+  },
 ];
 
 export function ResultDisplay(props) {
@@ -156,7 +152,7 @@ export function ResultDisplay(props) {
       </Row>
       <Divider />
       <Alert
-        style={{ marginTop: "10px", marginBottom: "10px" }}
+        style={{ marginTop: '10px', marginBottom: '10px' }}
         message="Įspėjimas"
         description="Šis skaičiavimas gali neatspindėti tikros situacijos. Jeigu turite įtarimų skambinkite į Karštąją koronaviruso liniją telefonu 1808."
         type="warning"
@@ -167,24 +163,24 @@ export function ResultDisplay(props) {
         <div>
           <p>
             Jūs praleidote net <strong>{percentageAtHome}% </strong> laiko
-            namie. Pasidalinkite apie tai socialinuose tinkluose!{" "}
-            <Tag color="green">#stayathome</Tag>{" "}
+            namie. Pasidalinkite apie tai socialinuose tinkluose!{' '}
+            <Tag color="green">#stayathome</Tag>{' '}
           </p>
           <Button
             href={
-              "https://www.facebook.com/sharer/sharer.php?u=https://tracking-virus.netlify.com/"
+              'https://www.facebook.com/sharer/sharer.php?u=https://tracking-virus.netlify.com/'
             }
           >
             <FacebookOutlined />
           </Button>
           <Button
-            style={{ marginLeft: "2px" }}
+            style={{ marginLeft: '2px' }}
             href="https://twitter.com/home?status=https://tracking-virus.netlify.com/ Aš laiką leidžiu namie #stayathome"
           >
             <TwitterOutlined />
           </Button>
           <Button
-            style={{ marginLeft: "2px" }}
+            style={{ marginLeft: '2px' }}
             href="https://www.linkedin.com/shareArticle?mini=true&url=https://tracking-virus.netlify.com/&title=&summary=Aš laiką leidžiu namie #stayathome&source="
           >
             <LinkedinOutlined />
@@ -198,7 +194,7 @@ export function ResultDisplay(props) {
         </p>
       )}
 
-      <Tabs style={{ marginTop: "10px" }} type="card">
+      <Tabs style={{ marginTop: '10px' }} type="card">
         <TabPane tab="Užsikrėtimo rizika" key="1">
           <p>
             Lentelėje yra pateikiamos TOP 3 vietos, kurios turėjo įtakos jūsų
@@ -232,12 +228,15 @@ export function ResultDisplay(props) {
             size="small"
             bordered
             dataSource={[
-              "Kuo mažiau lankykitės viešose vietose.",
-              "Venkite gyvo kontakto su žmonėmis, kurie negyvena toje pačioje vietoje.",
-              "Dažnai plaukite rankas.",
-              "Jei yra įmanoma dirbkite nuotoliniu būdu."
+              'Karantinas pratęsiamas dviem savaitėms - iki balandžio 13d.',
+              'Parkuose ir viešose vietose lankykitės ne didesnėse nei dviejų asmenų grupėse.',
+              'Į prekybos paslaugų vietas eikite vienas.',
+              'Viešose vietose dėvėkite apsaugos kaukes, respiratorius arva kitas nosį ir burną dengiančias priemones.',
+              'Jei grįžote iš užsienio - jums privalomas 14 dienų karantinas.',
+              'Iki gegužės 1 d. 00:00 val. degalų pardavimo vietose gali būti prekiaujama benzinu, kuriame yra mažiau nei 10 procentų biodegalų.',
+              'Grįžus iš užsienio ir nesilaikant karantino gresia baudžiamoji atsakomybė, o už smulkesnius nusižengimus policija gali skirti pinigines baudas.',
             ]}
-            renderItem={item => <List.Item>{item}</List.Item>}
+            renderItem={(item) => <List.Item>{item}</List.Item>}
           />
         </TabPane>
       </Tabs>

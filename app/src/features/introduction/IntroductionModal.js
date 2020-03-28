@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import { Modal } from "antd";
+import { Modal } from 'antd';
 
 export function IntroductionModal(props) {
   const title =
-    localStorage.getItem("introductionModalShown") == null
-      ? "Sveiki atvykę!"
-      : "Informacija";
+    localStorage.getItem('introductionModalShown') == null
+      ? 'Sveiki atvykę!'
+      : 'Informacija';
 
   return (
     <Modal
@@ -20,7 +20,7 @@ export function IntroductionModal(props) {
           Šiame tinkalapyje jūs galite matyti užsikrėtusių žmonių lankytas
           vietas. Vietos pažymėtos remiantis Nacionalinės visuomenės sveikatos
           centro prie Sveikatos apsaugos ministerijos paskelbtais
-        </span>{" "}
+        </span>{' '}
         <a
           rel="noopener noreferrer"
           target="_blank"

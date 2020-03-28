@@ -1,21 +1,19 @@
 const QUARANTINE_START = 1584309600;
 
-const getFutureRiskScores = places => {
+const getFutureRiskScores = (places) => {
   const homePlacesNames = getHomePlacesNames(places);
-  console.log("HOME/WORK Places:");
-  console.log(homePlacesNames);
 
   const quarantinePlaces = places.filter(
-    p => p.visitStartTs > QUARANTINE_START
+    (p) => p.visitStartTs > QUARANTINE_START
   );
-//   const timeSpentAtHome = quarantinePlaces
-//     .filter(p => homePlacesNames.indexOf(p.location.name) !== -1)
-//     .reduce((sum, p) => sum + p.timeSpent, 0);
+  //   const timeSpentAtHome = quarantinePlaces
+  //     .filter(p => homePlacesNames.indexOf(p.location.name) !== -1)
+  //     .reduce((sum, p) => sum + p.timeSpent, 0);
   const daysFromQuarantineStart =
     (new Date().getTime() / 1000 - QUARANTINE_START) / 86400;
 
   const publicPlaces = quarantinePlaces.filter(
-    p =>
+    (p) =>
       !p.location.address.includes(p.location.name) &&
       homePlacesNames.indexOf(p.location.name) === -1
   );
@@ -28,22 +26,24 @@ const getFutureRiskScores = places => {
       (12 * daysFromQuarantineStart)) *
     100;
 
-  console.log("Public places:");
+  console.log('Public places:');
   console.log(publicPlaces);
 
   return {
     percentageAtHome,
     visitedPublicPlacesCount: publicPlaces.length,
     hoursSpentAtPublicPlaces,
-    publicPlaces
+    publicPlaces,
   };
 };
 
-const getHomePlacesNames = places => {
-  places.forEach(place => {
+const getHomePlacesNames = (places) => {
+  places.forEach((place) => {
     place.timeSpent = (place.visitEndTs - place.visitStartTs) / 3600;
   });
-  const names = places.filter(p => p.timeSpent > 4).map(p => p.location.name);
+  const names = places
+    .filter((p) => p.timeSpent > 4)
+    .map((p) => p.location.name);
   const uniqueNames = Array.from(new Set(names));
 
   const uniquePlaces = removeDuplicatesByName(places);
@@ -52,18 +52,18 @@ const getHomePlacesNames = places => {
     0
   );
   uniquePlaces.forEach(
-    p => (p.percentageTimeSpent = p.timeSpent / totalTimeSpent)
+    (p) => (p.percentageTimeSpent = p.timeSpent / totalTimeSpent)
   );
   return uniquePlaces
     .filter(
-      p =>
+      (p) =>
         p.percentageTimeSpent > 0.1 &&
         uniqueNames.indexOf(p.location.name) !== -1
     )
-    .map(p => p.location.name);
+    .map((p) => p.location.name);
 };
 
-const removeDuplicatesByName = places => {
+const removeDuplicatesByName = (places) => {
   const placesByName = {};
   for (let i = 0; i < places.length; i++) {
     if (!placesByName.hasOwnProperty(places[i].location.name)) {
@@ -77,6 +77,4 @@ const removeDuplicatesByName = places => {
 
 export default getFutureRiskScores;
 
-export {
-  getHomePlacesNames
-}
+export { getHomePlacesNames };
