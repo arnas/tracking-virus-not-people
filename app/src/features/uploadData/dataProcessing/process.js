@@ -8,9 +8,7 @@ const MAX_DISTANCE = 300;
 const MAX_TIME = 7200;
 const TIME_DIMINISHING_SPEED = 10;
 const DISTANCE_DIMINISHING_SPEED = 20;
-const W1 = 0.7;
-const W2 = 0.2;
-const W3 = 0.1;
+const WEIGHTS = [0.7, 0.2, 0.1];
 const OTHER_FACTORS_RATIO = 0.3;
 
 const getTop3Cases = (place) => {
@@ -107,7 +105,11 @@ const process = (places) => {
     }
     
     const sortedComponents = componentsValues.sort((a, b) => b.score - a.score).filter((a,idx) => a.visitedLocation.visitEndTs > a.case.timestamp).filter((a,idx) => idx < 3);
-    const score = (W1 * sortedComponents[0].score + W2 * sortedComponents[1].score + W3 * sortedComponents[2].score) * (1 - OTHER_FACTORS_RATIO);
+    let score = 0;
+    for (let i = 0; i < sortedComponents.length; ++i)
+        if (sortedComponents[i])
+            score += WEIGHTS[i] * sortedComponents[i].score
+    score *= (1 - OTHER_FACTORS_RATIO);
 
     const sumScore = sortedComponents.reduce((sum, c) => sum + c.score, 0);
     sortedComponents.forEach((c) => c.score = c.score / sumScore);
