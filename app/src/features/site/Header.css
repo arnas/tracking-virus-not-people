@@ -4,6 +4,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  z-index: 500;
+  background-color: rgba(240, 242, 245, 0.8);
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .title {
@@ -28,17 +34,21 @@
   margin-right: 10px;
 }
 
-.logo-svg {
+.drawerButton {
+  display: none !important;
+}
+
+.title {
   height: 100px;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-  .header {
+  /* .header {
     flex-wrap: wrap;
     justify-content: center;
-  }
+  } */
 
   .title {
-    font-size: 30px;
+    height: 70px;
   }
 
   .toolbar {
@@ -48,23 +58,30 @@
 
 @media only screen and (max-width: 1420px) and (min-width: 768px) {
   .title {
-    font-size: 60px;
-    color: red;
+    height: 70px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .header {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .title {
     margin: 0px 0 0 0px;
-    font-size: 30px;
+    height: 70px;
   }
 
   .toolbar {
     margin-right: 10px;
   }
+  .toolbar {
+    display: none;
+  }
+
+  .drawerButton {
+    display: block !important;
+  }
+}
+
+
+.drawer-button{
+  /* width: 100%; */
+  margin-bottom: 4px;
 }

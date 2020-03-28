@@ -96,6 +96,7 @@ export function UploadDataModal(props) {
   return (
     <div>
       <Modal
+        style={props.style ? props.style : {}}
         confirmLoading={loading}
         title="Įkelk Savo Google Vietovių Istoriją"
         visible={props.visible}

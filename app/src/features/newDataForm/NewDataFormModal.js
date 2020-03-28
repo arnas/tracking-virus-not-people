@@ -32,6 +32,7 @@ export const NewDataFormModal = (props) => {
 
   return (
     <Modal
+      style={props.style && { top: '20px' }}
       title="Pranešk apie naują vietą"
       visible={props.visible}
       onCancel={props.handleClose}

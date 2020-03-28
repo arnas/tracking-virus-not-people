@@ -8,10 +8,12 @@ import {
   BarChartOutlined,
   NotificationOutlined,
   DeploymentUnitOutlined,
+  MenuOutlined,
 } from '@ant-design/icons';
 import question from '../../question.svg';
 import { ResultsModal } from '../uploadData/ResultsModal';
 import sekVirusaLogo from '../../sekvirusa_logo.svg';
+import { MobileDrawer } from './drawer/MobileDrawer';
 export function Header() {
   const [isOpenNotifyModal, setIsOpenNotifyModal] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -21,12 +23,29 @@ export function Header() {
 
   const [results, setResults] = useState(undefined);
 
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const [mobileMode, setMobileMode] = useState(false);
+
+  const closeDrawerAndCallArg = (arg) => (e) => {
+    setIsDrawerOpen(false);
+    setMobileMode(true);
+    arg();
+  };
+
   return (
     <>
       <div className="header">
-        <h1 className="title">
-          <img alt="" className="logo-svg" src={sekVirusaLogo} />
-        </h1>
+        <img alt="" className="title" src={sekVirusaLogo} />
+
+        <Button
+          className={'drawerButton'}
+          onClick={() => setIsDrawerOpen(true)}
+          style={{ marginRight: 16 }}
+          size="large"
+        >
+          <MenuOutlined />
+        </Button>
 
         <div className="toolbar">
           {results && (
@@ -35,7 +54,7 @@ export function Header() {
               onClick={() => setIsOpenResultsModal(true)}
               type="primary"
               shape="round"
-              size={'large'}
+              size={'normal'}
             >
               <BarChartOutlined> </BarChartOutlined>
               Rezultatai
@@ -43,8 +62,7 @@ export function Header() {
           )}
 
           <Button size="large" onClick={() => setIsOpenNotifyModal(true)}>
-            <NotificationOutlined />
-            Pranešk
+            <NotificationOutlined /> Pranešk
           </Button>
           <Button
             onClick={() => setIsOpenModal(true)}
@@ -66,6 +84,7 @@ export function Header() {
       </div>
       <UploadDataModal
         visible={isOpenModal}
+        style={mobileMode && { top: '20px' }}
         handleClose={() => setIsOpenModal(false)}
         handleDataUpload={(data) => {
           setResults(data);
@@ -73,18 +92,36 @@ export function Header() {
         }}
       />
       <NewDataFormModal
+        style={mobileMode && { top: '20px' }}
         visible={isOpenNotifyModal}
         handleClose={() => setIsOpenNotifyModal(false)}
       />
 
       <IntroductionModal
+        style={mobileMode && { top: '20px' }}
         visible={isOpenIntroductionModal}
         handleClose={() => setIsOpenIntroductionModal(false)}
       />
       <ResultsModal
+        style={mobileMode && { top: '20px' }}
         visible={isOpenResultsModal}
         score={results}
         handleClose={() => setIsOpenResultsModal(false)}
+      />
+      <MobileDrawer
+        setIsDrawerOpen={setIsDrawerOpen}
+        isDrawerOpen={isDrawerOpen}
+        results={results}
+        setIsOpenResultsModal={closeDrawerAndCallArg(() =>
+          setIsOpenResultsModal(true)
+        )}
+        setIsOpenModal={closeDrawerAndCallArg(() => setIsOpenModal(true))}
+        setIsOpenNotifyModal={closeDrawerAndCallArg(() =>
+          setIsOpenNotifyModal(true)
+        )}
+        setIsOpenIntroductionModal={closeDrawerAndCallArg(() =>
+          setIsOpenIntroductionModal(true)
+        )}
       />
     </>
   );

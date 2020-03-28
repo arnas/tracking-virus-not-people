@@ -1,5 +1,5 @@
 .leaflet-container {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -37,4 +37,14 @@
 
 .leaflet-pane .leaflet-marker-pane img {
   z-index: auto !important;
+}
+
+.leaflet-top {
+  top: 100px;
+}
+
+@media only screen and (max-width: 634px) {
+  .leaflet-top {
+    top: 80px;
+  }
 }

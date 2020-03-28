@@ -13,3 +13,16 @@
 .info-text:first-child {
   margin-left: 10px;
 }
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    display: none;
+  }
+  .info-text:first-child {
+    margin-left: 4px;
+  }
+  .info-text {
+    font-size: 12px;
+    margin: 4;
+  }
+}

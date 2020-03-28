@@ -5,6 +5,7 @@ import data from './data.json';
 import driveIn from './drive-in.json';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
 const L = require('leaflet');
+
 const TILE_LAYER_ATTRIBUTION =
   'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL';
 const TILE_LAYER_URL =

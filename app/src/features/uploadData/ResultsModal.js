@@ -7,6 +7,7 @@ export function ResultsModal(props) {
   return (
     <div>
       <Modal
+        style={props.style ? props.style : {}}
         width="960px"
         title="Rezultatai"
         visible={props.visible}

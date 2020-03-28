@@ -10,6 +10,7 @@ export function IntroductionModal(props) {
 
   return (
     <Modal
+      style={props.style ? props.style : {}}
       footer={null}
       title={title}
       visible={props.visible}
