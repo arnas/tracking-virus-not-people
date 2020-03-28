@@ -32,8 +32,7 @@ export function MobileDrawer({
           {results && (
             <Button
               onClick={() => setIsOpenResultsModal(true)}
-              type="primary"
-              shape="round"
+              type="link"
               size={'large'}
             >
               <BarChartOutlined> </BarChartOutlined>
