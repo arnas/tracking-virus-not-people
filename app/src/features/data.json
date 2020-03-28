@@ -7,7 +7,8 @@
     "time": "3/7/2020 18:00",
     "latitude": 54.8980147,
     "longitude": 23.9134134,
-    "timestamp": 1583596800.0
+    "timestamp": 1583596800.0,
+    "case_id": 3
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "time": "3/8/2020 18:00",
     "latitude": 54.71158055,
     "longitude": 25.276634955,
-    "timestamp": 1583683200.0
+    "timestamp": 1583683200.0,
+    "case_id": 6
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "time": "3/9/2020 17:45",
     "latitude": 54.7038389,
     "longitude": 25.3162598378,
-    "timestamp": 1583768700.0
+    "timestamp": 1583768700.0,
+    "case_id": 6
   },
   {
     "id": 4,
@@ -37,7 +40,19 @@
     "time": "3/11/2020 18:00",
     "latitude": 54.6993582,
     "longitude": 25.2583631,
-    "timestamp": 1583942400.0
+    "timestamp": 1583942400.0,
+    "case_id": 6
+  },
+  {
+    "id": 15,
+    "address": "Oro uosto g. 4",
+    "name": "Kauno oro uostas",
+    "city": "Kaunas",
+    "time": "2/10/2020 14:20",
+    "latitude": 54.9671759,
+    "longitude": 24.0740002,
+    "timestamp": 1581337200.0,
+    "case_id": 7
   },
   {
     "id": 5,
@@ -47,7 +62,8 @@
     "time": "3/10/2020 16:00",
     "latitude": 54.8890485,
     "longitude": 23.9278384,
-    "timestamp": 1583848800.0
+    "timestamp": 1583848800.0,
+    "case_id": 7
   },
   {
     "id": 6,
@@ -57,7 +73,8 @@
     "time": "3/10/2020 17:00",
     "latitude": 54.67076335,
     "longitude": 25.2818261837,
-    "timestamp": 1583852400.0
+    "timestamp": 1583852400.0,
+    "case_id": 7
   },
   {
     "id": 7,
@@ -67,7 +84,8 @@
     "time": "3/13/2020 16:00",
     "latitude": 54.7696406,
     "longitude": 25.1952398,
-    "timestamp": 1584108000.0
+    "timestamp": 1584108000.0,
+    "case_id": 11
   },
   {
     "id": 8,
@@ -118,16 +136,6 @@
     "latitude": 54.7878058,
     "longitude": 24.6803446,
     "timestamp": 1584108000.0
-  },
-  {
-    "id": 13,
-    "address": "Ateities g. 10",
-    "name": "Norfa",
-    "city": "Vilnius",
-    "time": "3/14/2020 15:00",
-    "latitude": 54.7368678,
-    "longitude": 25.2679029,
-    "timestamp": 1584190800.0
   },
   {
     "id": 14,
@@ -448,6 +456,16 @@
     "latitude": 54.9671759,
     "longitude": 24.0740002,
     "timestamp": 1584208800.0
+  },
+  {
+    "id": 46,
+    "address": "Ateities g. 10",
+    "name": "Norfa",
+    "city": "Vilnius",
+    "time": "3/14/2020 15:00",
+    "latitude": 54.7368678,
+    "longitude": 25.2679029,
+    "timestamp": 1584190800.0
   },
   {
     "id": 47,
@@ -854,7 +872,7 @@
     "address": "Dariaus ir Girėno g.112",
     "name": "Norfa XL",
     "city": "Jurbarkas",
-    "time": "3/12-2020",
+    "time": "3/12/2020",
     "latitude": 55.0789049,
     "longitude": 22.7748412,
     "timestamp": 1583964000.0
@@ -864,7 +882,7 @@
     "address": "Dariaus ir Girėno g.112",
     "name": "Norfa XL",
     "city": "Jurbarkas",
-    "time": "3-11-2020",
+    "time": "3/11/2020",
     "latitude": 55.0789049,
     "longitude": 22.7748412,
     "timestamp": 1583877600.0
@@ -874,7 +892,7 @@
     "address": "Dariaus ir Girėno g.112",
     "name": "Norfa XL",
     "city": "Jurbarkas",
-    "time": "3-10/2020",
+    "time": "3/10/2020",
     "latitude": 55.0789049,
     "longitude": 22.7748412,
     "timestamp": 1583791200.0
@@ -901,16 +919,6 @@
   },
   {
     "id": 92,
-    "address": "Rodūnios kl. 10A",
-    "name": "Vilniaus oro uostas",
-    "city": "Vilnius",
-    "time": "3/13/2020 23:00",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
-    "timestamp": 1584140400.0
-  },
-  {
-    "id": 93,
     "address": "Rodūnios kl. 10A",
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
@@ -1008,5 +1016,685 @@
     "latitude": 55.7245311,
     "longitude": 21.1215997,
     "timestamp": 1584799200.0
+  },
+  {
+    "id": 103,
+    "address": "Butkų Juzės g. 9",
+    "name": "Klaipėdos autobusų stotis",
+    "city": "Klaipeda",
+    "time": "3/13/2020 20:00",
+    "latitude": 55.7198641,
+    "longitude": 21.1376272,
+    "timestamp": 1584023400.0
+  },
+  {
+    "id": 104,
+    "address": "Liepojos pl. 1",
+    "name": "Palangos oro uostas",
+    "city": "Palanga",
+    "time": "3/16/2020",
+    "latitude": 55.97145935,
+    "longitude": 21.0972893706,
+    "timestamp": 1584309600.0
+  },
+  {
+    "id": 105,
+    "case_id": 89.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/14/20 16:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584194400.0
+  },
+  {
+    "id": 106,
+    "case_id": 89.0,
+    "address": "Luokės g. 74A",
+    "name": "LIDL",
+    "city": "Telšiai",
+    "time": "3/18/20 12:00",
+    "latitude": 55.975951699999996,
+    "longitude": 22.265764800000003,
+    "timestamp": 1584525600.0
+  },
+  {
+    "id": 107,
+    "case_id": 94.0,
+    "address": "Taikos pr. 84",
+    "name": "Maxima",
+    "city": "Klaipėda",
+    "time": "3/20/20 12:00",
+    "latitude": 55.671524399999996,
+    "longitude": 21.169112600000002,
+    "timestamp": 1584698400.0
+  },
+  {
+    "id": 108,
+    "case_id": 94.0,
+    "address": "Taikos pr. 66B",
+    "name": "LIDL",
+    "city": "Klaipėda",
+    "time": "3/21/20 12:00",
+    "latitude": 55.683799,
+    "longitude": 21.159686999999998,
+    "timestamp": 1584784800.0
+  },
+  {
+    "id": 109,
+    "case_id": 94.0,
+    "address": "Taikos pr. 66A",
+    "name": "Norfa \"Grandus\"",
+    "city": "Klaipėda",
+    "time": "3/21/20 12:00",
+    "latitude": 55.6846191,
+    "longitude": 21.1584893,
+    "timestamp": 1584784800.0
+  },
+  {
+    "id": 110,
+    "case_id": 96.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/14/20 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584180000.0
+  },
+  {
+    "id": 111,
+    "case_id": 97.0,
+    "address": "Liepojos pl. 1",
+    "name": "Palangos oro uostas",
+    "city": "Palanga",
+    "time": "3/14/20 18:05",
+    "latitude": 55.97145935,
+    "longitude": 21.09728937,
+    "timestamp": 1584201900.0
+  },
+  {
+    "id": 112,
+    "case_id": 98.0,
+    "address": "Oro uosto g. 7",
+    "name": "Kauno oro uostas",
+    "city": "Kaunas",
+    "time": "3/21/20 12:00",
+    "latitude": 54.9665137,
+    "longitude": 24.075195,
+    "timestamp": 1584784800.0
+  },
+  {
+    "id": 113,
+    "case_id": 103.0,
+    "address": "Taikos pr. 66B",
+    "name": "LIDL",
+    "city": "Klaipėda",
+    "time": "3/20/20 12:00",
+    "latitude": 55.683799,
+    "longitude": 21.159686999999998,
+    "timestamp": 1584698400.0
+  },
+  {
+    "id": 114,
+    "case_id": 106.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/18/20 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584525600.0
+  },
+  {
+    "id": 115,
+    "case_id": 107.0,
+    "address": "Ūdrijos g. 39",
+    "name": "UAB Ersida",
+    "city": "Alytus",
+    "time": "3/10/20 12:00",
+    "latitude": 54.409122700000005,
+    "longitude": 24.0015817,
+    "timestamp": 1583834400.0
+  },
+  {
+    "id": 116,
+    "case_id": 107.0,
+    "address": "Santaikos g. 38E",
+    "name": "Maxima XX",
+    "city": "Alytus",
+    "time": "3/15/20 20:00",
+    "latitude": 54.3876912,
+    "longitude": 24.0269409,
+    "timestamp": 1584295200.0
+  },
+  {
+    "id": 117,
+    "case_id": 108.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/20/20 11:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584694800.0
+  },
+  {
+    "id": 118,
+    "case_id": 109.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/20/20 10:50",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584694200.0
+  },
+  {
+    "id": 119,
+    "case_id": 110.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/14/20 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584180000.0
+  },
+  {
+    "id": 120,
+    "case_id": 111.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/14/20 16:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584194400.0
+  },
+  {
+    "id": 121,
+    "case_id": 111.0,
+    "address": "Luokės g. 73",
+    "name": "Norfa",
+    "city": "Telšiai",
+    "time": "3/16/20 12:00",
+    "latitude": 55.9752225,
+    "longitude": 22.266909899999998,
+    "timestamp": 1584352800.0
+  },
+  {
+    "id": 122,
+    "case_id": 111.0,
+    "address": "Vilniaus g.38-2",
+    "name": "Mažeikių butų ūkio kasa",
+    "city": "Telšių r.",
+    "time": "3/16/20 12:00",
+    "latitude": 55.977118700000005,
+    "longitude": 22.261805499999998,
+    "timestamp": 1584352800.0
+  },
+  {
+    "id": 123,
+    "case_id": 112.0,
+    "address": "Oro uosto g. 7",
+    "name": "Kauno oro uostas",
+    "city": "Kaunas",
+    "time": "3/21/20 12:00",
+    "latitude": 54.9665137,
+    "longitude": 24.075195,
+    "timestamp": 1584784800.0
+  },
+  {
+    "id": 124,
+    "case_id": 113.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/13/20 10:30",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584088200.0
+  },
+  {
+    "id": 125,
+    "case_id": 113.0,
+    "address": "Vilniaus g. 47B",
+    "name": "Norfa",
+    "city": "Joniškis",
+    "time": "3/14/20 16:00",
+    "latitude": 56.228077799999994,
+    "longitude": 23.602142999999998,
+    "timestamp": 1584194400.0
+  },
+  {
+    "id": 126,
+    "case_id": 113.0,
+    "address": "Vilniaus g. 40",
+    "name": "Senukai",
+    "city": "Joniškis",
+    "time": "3/15/20 12:00",
+    "latitude": 56.231699600000006,
+    "longitude": 23.605146899999998,
+    "timestamp": 1584266400.0
+  },
+  {
+    "id": 127,
+    "case_id": 114.0,
+    "address": "Vytauto g. 51",
+    "name": "Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
+    "city": "Palanga",
+    "time": "3/14/20 15:00",
+    "latitude": 55.91767610000001,
+    "longitude": 21.0634634,
+    "timestamp": 1584190800.0
+  },
+  {
+    "id": 128,
+    "case_id": 114.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/14/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584180000.0
+  },
+  {
+    "id": 129,
+    "case_id": 114.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/15/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584266400.0
+  },
+  {
+    "id": 130,
+    "case_id": 115.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/13/20 10:30",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584088200.0
+  },
+  {
+    "id": 131,
+    "case_id": 116.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/14/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584180000.0
+  },
+  {
+    "id": 132,
+    "case_id": 116.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/15/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584266400.0
+  },
+  {
+    "id": 133,
+    "case_id": 116.0,
+    "address": "Vytauto g. 101",
+    "name": "Šiaulių Centro poliklinika",
+    "city": "Šiauliai",
+    "time": "3/20/20 12:00",
+    "latitude": 55.9284955,
+    "longitude": 23.3125493,
+    "timestamp": 1584698400.0
+  },
+  {
+    "id": 134,
+    "case_id": 117.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/13/20 10:30",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584088200.0
+  },
+  {
+    "id": 135,
+    "case_id": 118.0,
+    "address": "Vytauto g. 51",
+    "name": "Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
+    "city": "Palanga",
+    "time": "3/14/20 15:00",
+    "latitude": 55.91767610000001,
+    "longitude": 21.0634634,
+    "timestamp": 1584190800.0
+  },
+  {
+    "id": 136,
+    "case_id": 118.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/14/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584180000.0
+  },
+  {
+    "id": 137,
+    "case_id": 118.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/15/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584266400.0
+  },
+  {
+    "id": 138,
+    "case_id": 118.0,
+    "address": "Upytės g. 19",
+    "name": "Maxima",
+    "city": "Joniškis",
+    "time": "3/18/20 12:00",
+    "latitude": 56.2397625,
+    "longitude": 23.6170223,
+    "timestamp": 1584525600.0
+  },
+  {
+    "id": 139,
+    "case_id": 119.0,
+    "address": "Vytauto g. 51",
+    "name": "Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
+    "city": "Palanga",
+    "time": "3/14/20 15:00",
+    "latitude": 55.91767610000001,
+    "longitude": 21.0634634,
+    "timestamp": 1584190800.0
+  },
+  {
+    "id": 140,
+    "case_id": 119.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/14/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584180000.0
+  },
+  {
+    "id": 141,
+    "case_id": 119.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/15/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584266400.0
+  },
+  {
+    "id": 142,
+    "case_id": 120.0,
+    "address": "Vytauto g. 51",
+    "name": "Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
+    "city": "Palanga",
+    "time": "3/14/20 15:00",
+    "latitude": 55.91767610000001,
+    "longitude": 21.0634634,
+    "timestamp": 1584190800.0
+  },
+  {
+    "id": 143,
+    "case_id": 120.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/14/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584180000.0
+  },
+  {
+    "id": 144,
+    "case_id": 120.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/15/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584266400.0
+  },
+  {
+    "id": 145,
+    "case_id": 121.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/7/20 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1583575200.0
+  },
+  {
+    "id": 146,
+    "case_id": 121.0,
+    "address": "Vaduvos g. 3",
+    "name": "UAB \"Moller Auto\"",
+    "city": "Vilnius",
+    "time": "3/9/20 17:00",
+    "latitude": 54.643172899999996,
+    "longitude": 25.2034415,
+    "timestamp": 1583766000.0
+  },
+  {
+    "id": 147,
+    "case_id": 122.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/14/20 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584180000.0
+  },
+  {
+    "id": 148,
+    "case_id": 122.0,
+    "address": "Jonažolių g. 1",
+    "name": "IKI",
+    "city": "Vilnius",
+    "time": "3/14/20 20:00",
+    "latitude": 54.6669142,
+    "longitude": 25.214485500000002,
+    "timestamp": 1584208800.0
+  },
+  {
+    "id": 149,
+    "case_id": 123.0,
+    "address": "Ateities g. 10",
+    "name": "Norfa XXL",
+    "city": "Vilnius",
+    "time": "3/17/20 18:00",
+    "latitude": 54.736868799999996,
+    "longitude": 25.266342,
+    "timestamp": 1584460800.0
+  },
+  {
+    "id": 150,
+    "case_id": 124.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/19/20 19:40",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584639600.0
+  },
+  {
+    "id": 151,
+    "case_id": 125.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/14/20 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584180000.0
+  },
+  {
+    "id": 152,
+    "case_id": 126.0,
+    "address": "Oro uosto g. 7",
+    "name": "Kauno oro uostas",
+    "city": "Kaunas",
+    "time": "3/15/20 18:00",
+    "latitude": 54.9665137,
+    "longitude": 24.075195,
+    "timestamp": 1584288000.0
+  },
+  {
+    "id": 153,
+    "case_id": 127.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/11/20 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1583920800.0
+  },
+  {
+    "id": 154,
+    "case_id": 131.0,
+    "address": "Jeruzalės g. 17",
+    "name": "IKI",
+    "city": "Vilnius",
+    "time": "3/17/20 18:30",
+    "latitude": 54.74403879999999,
+    "longitude": 25.2776632,
+    "timestamp": 1584462600.0
+  },
+  {
+    "id": 155,
+    "case_id": 131.0,
+    "address": "Molėtų pl. 35",
+    "name": "Vynoteka",
+    "city": "Vilnius",
+    "time": "3/20/20 19:00",
+    "latitude": 54.76972320000001,
+    "longitude": 25.2708829,
+    "timestamp": 1584723600.0
+  },
+  {
+    "id": 156,
+    "case_id": 131.0,
+    "address": "Jeruzalės g. 4",
+    "name": "RIMI",
+    "city": "Vilnius",
+    "time": "3/21/20 13:00",
+    "latitude": 54.73992239999999,
+    "longitude": 25.2737711,
+    "timestamp": 1584788400.0
+  },
+  {
+    "id": 157,
+    "case_id": 132.0,
+    "address": "J. Jasinskio g. 16",
+    "name": "IKI",
+    "city": "Vilnius",
+    "time": "3/15/20 12:00",
+    "latitude": 54.688221999999996,
+    "longitude": 25.2582871,
+    "timestamp": 1584266400.0
+  },
+  {
+    "id": 158,
+    "case_id": 133.0,
+    "address": "Vytauto g. 51",
+    "name": "Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
+    "city": "Palanga",
+    "time": "3/14/20 15:00",
+    "latitude": 55.91767610000001,
+    "longitude": 21.0634634,
+    "timestamp": 1584190800.0
+  },
+  {
+    "id": 159,
+    "case_id": 133.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/14/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584180000.0
+  },
+  {
+    "id": 160,
+    "case_id": 133.0,
+    "address": "Venecijos akl. 2",
+    "name": "Atostogų parkas",
+    "city": "Žibininkai",
+    "time": "3/15/20 12:00",
+    "latitude": 55.958187,
+    "longitude": 21.126647,
+    "timestamp": 1584266400.0
+  },
+  {
+    "id": 161,
+    "case_id": 138.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/17/20 17:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584457200.0
+  },
+  {
+    "id": 162,
+    "case_id": 139.0,
+    "address": "Santaikos g. 52,",
+    "name": "Maxima",
+    "city": "Alytus",
+    "time": "3/15/20 20:00",
+    "latitude": 54.3863205,
+    "longitude": 24.0052277,
+    "timestamp": 1584295200.0
+  },
+  {
+    "id": 163,
+    "case_id": 140.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/15/20 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584266400.0
+  },
+  {
+    "id": 164,
+    "case_id": 140.0,
+    "address": "Jogailos g. 2",
+    "name": "Euro vaistinė",
+    "city": "Vilnius",
+    "time": "3/19/20 12:00",
+    "latitude": 54.6870709,
+    "longitude": 25.2787275,
+    "timestamp": 1584612000.0
   }
 ]
