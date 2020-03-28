@@ -17,13 +17,17 @@ export function UploadDataModal(props) {
     const files = inputRef.current.files;
     if (files.length > 0) {
       const closeMessage = message.loading("Daroma duomenų analizė...", 0);
-      const parsedData = await parse(files[0]);
-      if (parsedData !== null) {
-        const score = process(parsedData);
-        const futureRisk = getFutureRiskScores(parsedData);
-        props.handleDataUpload({ ...score, ...futureRisk });
-      } else {
-        message.error("Trūksta duomenų.");
+      try {
+        const parsedData = await parse(files[0]);
+        if (parsedData !== null) {
+          const score = process(parsedData);
+          const futureRisk = getFutureRiskScores(parsedData);
+          props.handleDataUpload({ ...score, ...futureRisk });
+        } else {
+          message.error("Trūksta duomenų.");
+        }
+      } catch(e){
+        message.error('Įvyko nežinoma klaida.')
       }
 
       closeMessage();
