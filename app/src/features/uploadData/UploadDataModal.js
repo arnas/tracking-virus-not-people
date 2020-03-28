@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { ResultDisplay } from "./ResultsDisplay";
+import React, { useState } from 'react';
+import { ResultDisplay } from './ResultsDisplay';
 
-import { Alert, message, Modal } from "antd";
-import parse from "./dataProcessing/parse";
-import process from "./dataProcessing/process";
-import getFutureRiskScores from "./dataProcessing/futureRisk";
+import { Alert, message, Modal } from 'antd';
+import parse from './dataProcessing/parse';
+import process from './dataProcessing/process';
+import getFutureRiskScores from './dataProcessing/futureRisk';
 
 export function UploadDataModal(props) {
   const inputRef = React.createRef();
@@ -16,7 +16,7 @@ export function UploadDataModal(props) {
   const handleOk = async () => {
     const files = inputRef.current.files;
     if (files.length > 0) {
-      const closeMessage = message.loading("Daroma duomenų analizė...", 0);
+      const closeMessage = message.loading('Daroma duomenų analizė...', 0);
       try {
         const parsedData = await parse(files[0]);
         if (parsedData !== null) {
@@ -24,10 +24,10 @@ export function UploadDataModal(props) {
           const futureRisk = getFutureRiskScores(parsedData);
           props.handleDataUpload({ ...score, ...futureRisk });
         } else {
-          message.error("Trūksta duomenų.");
+          message.error('Trūksta duomenų.');
         }
-      } catch(e){
-        message.error('Įvyko nežinoma klaida.')
+      } catch (e) {
+        message.error('Įvyko nežinoma klaida.');
       }
 
       closeMessage();
@@ -41,7 +41,7 @@ export function UploadDataModal(props) {
         <>
           <ol>
             <li>
-              Prisijungę prie savo Google paskyros atidarykite šią{" "}
+              Prisijungę prie savo Google paskyros atidarykite šią{' '}
               <a
                 href="https://takeout.google.com/settings/takeout/custom/location_history"
                 target="_blank"
@@ -55,7 +55,7 @@ export function UploadDataModal(props) {
               Paspauskite <b>Kitas veiksmas</b>.
             </li>
             <li>
-              Pasirinkite Pristatymo būdą{" "}
+              Pasirinkite Pristatymo būdą{' '}
               <b>Siųsti atsisiuntimo nuorodą el.paštu</b>.
             </li>
             <li>
@@ -72,11 +72,11 @@ export function UploadDataModal(props) {
           </ol>
           <img
             alt=""
-            style={{ width: "100%", margin: "16px 0" }}
+            style={{ width: '100%', margin: '16px 0' }}
             src="https://cdn.kapwing.com/final_5e7617fd7a977e001514e5c0_74755.gif"
           />
           <Alert
-            style={{ marginBottom: "10px" }}
+            style={{ marginBottom: '10px' }}
             message="Jūsų duomenys nėra niekur siunčiami ir yra apdorojami jūsų kompiuteryje."
             type="info"
           />

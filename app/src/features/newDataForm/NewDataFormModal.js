@@ -1,33 +1,33 @@
-import React from "react";
-import { Form, Input, Button, Modal, message } from "antd";
+import React from 'react';
+import { Form, Input, Button, Modal, message } from 'antd';
 
 const layout = {
   labelCol: { span: 4 },
-  wrapperCol: { span: 20 }
+  wrapperCol: { span: 20 },
 };
 
 const validateMessages = {
-  required: "Šis laukas yra privalomas."
+  required: 'Šis laukas yra privalomas.',
 };
 
-const encode = data => {
+const encode = (data) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
 };
 
-export const NewDataFormModal = props => {
-  const onFinish = values => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "data", ...values.data })
+export const NewDataFormModal = (props) => {
+  const onFinish = (values) => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'data', ...values.data }),
     })
       .then(() => {
-        message.success("Pranešimas apie vietą sėkmingai išsiųstas.");
+        message.success('Pranešimas apie vietą sėkmingai išsiųstas.');
         props.handleClose();
       })
-      .catch(error => message.error("Įvyko klaida. Bandykite dar kartą."));
+      .catch((error) => message.error('Įvyko klaida. Bandykite dar kartą.'));
   };
 
   return (
@@ -45,14 +45,14 @@ export const NewDataFormModal = props => {
         validateMessages={validateMessages}
       >
         <Form.Item
-          name={["data", "place"]}
+          name={['data', 'place']}
           label="Vieta"
           rules={[{ required: true }]}
         >
           <Input name="place" />
         </Form.Item>
         <Form.Item
-          name={["data", "time"]}
+          name={['data', 'time']}
           label="Laikas"
           rules={[{ required: true }]}
         >
@@ -60,13 +60,13 @@ export const NewDataFormModal = props => {
         </Form.Item>
 
         <Form.Item
-          name={["data", "source"]}
+          name={['data', 'source']}
           label="Šaltinis"
           rules={[{ required: true }]}
         >
           <Input name="source" />
         </Form.Item>
-        <Form.Item name={["data", "details"]} label="Detalės">
+        <Form.Item name={['data', 'details']} label="Detalės">
           <Input.TextArea name="details" />
         </Form.Item>
         <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>

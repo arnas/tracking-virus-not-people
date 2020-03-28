@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { Button } from "antd";
-import "./Header.css";
-import { UploadDataModal } from "../uploadData/UploadDataModal";
-import { NewDataFormModal } from "../newDataForm/NewDataFormModal";
-import { IntroductionModal } from "../introduction/IntroductionModal";
+import React, { useState } from 'react';
+import { Button } from 'antd';
+import './Header.css';
+import { UploadDataModal } from '../uploadData/UploadDataModal';
+import { NewDataFormModal } from '../newDataForm/NewDataFormModal';
+import { IntroductionModal } from '../introduction/IntroductionModal';
 import {
   BarChartOutlined,
   NotificationOutlined,
-  DeploymentUnitOutlined
-} from "@ant-design/icons";
-import question from "../../question.svg";
-import { ResultsModal } from "../uploadData/ResultsModal";
-import sekVirusaLogo from "../../sekvirusa_logo.svg";
+  DeploymentUnitOutlined,
+} from '@ant-design/icons';
+import question from '../../question.svg';
+import { ResultsModal } from '../uploadData/ResultsModal';
+import sekVirusaLogo from '../../sekvirusa_logo.svg';
 export function Header() {
   const [isOpenNotifyModal, setIsOpenNotifyModal] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -31,11 +31,11 @@ export function Header() {
         <div className="toolbar">
           {results && (
             <Button
-              style={{ marginRight: "10px" }}
+              style={{ marginRight: '10px' }}
               onClick={() => setIsOpenResultsModal(true)}
               type="primary"
               shape="round"
-              size={"large"}
+              size={'large'}
             >
               <BarChartOutlined> </BarChartOutlined>
               Rezultatai
@@ -67,7 +67,7 @@ export function Header() {
       <UploadDataModal
         visible={isOpenModal}
         handleClose={() => setIsOpenModal(false)}
-        handleDataUpload={data => {
+        handleDataUpload={(data) => {
           setResults(data);
           setIsOpenResultsModal(true);
         }}
