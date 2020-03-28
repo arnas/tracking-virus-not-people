@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "address": "S. Daukanto g. 23",
     "name": "Restoranas",
     "city": "Kaunas",
@@ -11,7 +11,7 @@
     "case_id": 3
   },
   {
-    "id": 2,
+    "id": 1,
     "address": "Kernavės g. 84",
     "name": "Compensa koncertų salė",
     "city": "Vilnius",
@@ -22,7 +22,7 @@
     "case_id": 6
   },
   {
-    "id": 3,
+    "id": 2,
     "address": "V. Grybo g. 21",
     "name": "Šilo Maxima",
     "city": "Vilnius",
@@ -33,7 +33,7 @@
     "case_id": 6
   },
   {
-    "id": 4,
+    "id": 3,
     "address": "Saltoniškių g. 9",
     "name": "PC Panorama",
     "city": "Vilnius",
@@ -44,7 +44,7 @@
     "case_id": 6
   },
   {
-    "id": 15,
+    "id": 4,
     "address": "Oro uosto g. 4",
     "name": "Kauno oro uostas",
     "city": "Kaunas",
