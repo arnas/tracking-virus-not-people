@@ -67,7 +67,9 @@ export function MobileDrawer({
             <QuestionCircleOutlined /> Informacija
           </Button>
         </div>
-        <UpdateInfo />
+        <div>
+          <UpdateInfo />
+        </div>
       </div>
     </Drawer>
   );
