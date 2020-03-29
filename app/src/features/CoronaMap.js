@@ -4,6 +4,8 @@ import './CoronoMap.css';
 import data from './data.json';
 import driveIn from './drive-in.json';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
+import { getDate } from './utils/dateUtils';
+import moment from 'moment';
 const L = require('leaflet');
 
 const TILE_LAYER_ATTRIBUTION =
@@ -117,7 +119,7 @@ export function CoronaMap() {
                 <p>
                   {item.address}, {item.city}
                 </p>
-                <p>{item.time}</p>
+                <p>{getDate(moment.unix(item.timestamp))}</p>
               </Popup>
             </Circle>
           ))}

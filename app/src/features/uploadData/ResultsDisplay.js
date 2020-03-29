@@ -19,16 +19,9 @@ import {
   TwitterOutlined,
 } from '@ant-design/icons';
 import shortid from 'shortid';
+import { getDate } from '../utils/dateUtils';
 
 const { TabPane } = Tabs;
-
-const getDate = function (d) {
-  var format = 'YYYY-MM-DD HH:mm';
-  if (moment(d).startOf('day').valueOf() === moment(d).valueOf()) {
-    format = 'YYYY-MM-DD';
-  }
-  return moment(d).format(format);
-};
 
 const columns = [
   {
