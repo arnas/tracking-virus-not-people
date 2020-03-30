@@ -1718,5 +1718,71 @@
     "latitude": 55.9997949,
     "longitude": 22.2394213,
     "timestamp": 1584280800.0
+  },
+  {
+    "id": 167,
+    "case_id": 143.0,
+    "address": "Luokės g. 73",
+    "name": "Norfa",
+    "city": "Telšiai",
+    "time": "3/20/2020 17:00",
+    "latitude": 55.9756669,
+    "longitude": 22.2665582,
+    "timestamp": 1584716400.0
+  },
+  {
+    "id": 168,
+    "case_id": 144.0,
+    "address": "Naujoji g. 4",
+    "name": "Varduvos kavin?",
+    "city": "Mažeikiai",
+    "time": "3/20/2020 12:00",
+    "latitude": 56.3163304,
+    "longitude": 22.292084600000003,
+    "timestamp": 1584698400.0
+  },
+  {
+    "id": 169,
+    "case_id": 144.0,
+    "address": "Kurmaičių k., Mažeikių apylinkės sen LT-89256",
+    "name": "s/b \"Putinas\"",
+    "city": "Mažeikiai",
+    "time": "3/16/2020 12:00",
+    "latitude": 56.309575,
+    "longitude": 22.3839647,
+    "timestamp": 1584352800.0
+  },
+  {
+    "id": 170,
+    "case_id": 145.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/18/2020 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584525600.0
+  },
+  {
+    "id": 171,
+    "case_id": 148.0,
+    "address": "Oro uosto g. 7",
+    "name": "Kauno oro uostas",
+    "city": "Kaunas",
+    "time": "3/14/2020 12:00",
+    "latitude": 54.9665137,
+    "longitude": 24.075195,
+    "timestamp": 1584180000.0
+  },
+  {
+    "id": 172,
+    "case_id": 149.0,
+    "address": "Oro uosto g. 7",
+    "name": "Kauno oro uostas",
+    "city": "Kaunas",
+    "time": "3/20/2020 12:00",
+    "latitude": 54.9665137,
+    "longitude": 24.075195,
+    "timestamp": 1584698400.0
   }
 ]
