@@ -12,11 +12,14 @@ const getFutureRiskScores = (places) => {
   const daysFromQuarantineStart =
     (new Date().getTime() / 1000 - QUARANTINE_START) / 86400;
 
-  const publicPlaces = quarantinePlaces.filter(
-    (p) =>
-      !p.location.address.includes(p.location.name) &&
-      homePlacesNames.indexOf(p.location.name) === -1
-  );
+  const publicPlaces = quarantinePlaces
+    .filter((x) => x.location.address)
+    .filter((p) => {
+      return (
+        !p.location.address.includes(p.location.name) &&
+        homePlacesNames.indexOf(p.location.name) === -1
+      );
+    });
   const hoursSpentAtPublicPlaces = publicPlaces.reduce(
     (sum, p) => sum + p.timeSpent,
     0

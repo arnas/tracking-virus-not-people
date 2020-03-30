@@ -27,6 +27,8 @@ export function UploadDataModal(props) {
           message.error('Trūksta duomenų.');
         }
       } catch (e) {
+        console.log(e);
+
         message.error('Įvyko nežinoma klaida.');
       }
 
