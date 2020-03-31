@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button } from 'antd';
 import './Header.css';
 import { UploadDataModal } from '../uploadData/UploadDataModal';
-import { NewDataFormModal } from '../newDataForm/NewDataFormModal';
 import { IntroductionModal } from '../introduction/IntroductionModal';
 import {
   BarChartOutlined,
@@ -15,7 +14,6 @@ import { ResultsModal } from '../uploadData/ResultsModal';
 import sekVirusaLogo from '../../sekvirusa_logo.svg';
 import { MobileDrawer } from './drawer/MobileDrawer';
 export function Header() {
-  const [isOpenNotifyModal, setIsOpenNotifyModal] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [isOpenIntroductionModal, setIsOpenIntroductionModal] = useState(false);
 
@@ -61,7 +59,11 @@ export function Header() {
             </Button>
           )}
 
-          <Button size="large" onClick={() => setIsOpenNotifyModal(true)}>
+          <Button
+            size="large"
+            href="https://forms.gle/BeNP3soQRq97k4Qw6"
+            target="_blank"
+          >
             <NotificationOutlined /> Pranešk
           </Button>
           <Button
@@ -91,12 +93,6 @@ export function Header() {
           setIsOpenResultsModal(true);
         }}
       />
-      <NewDataFormModal
-        style={mobileMode && { top: '20px' }}
-        visible={isOpenNotifyModal}
-        handleClose={() => setIsOpenNotifyModal(false)}
-      />
-
       <IntroductionModal
         style={mobileMode && { top: '20px' }}
         visible={isOpenIntroductionModal}
@@ -116,9 +112,6 @@ export function Header() {
           setIsOpenResultsModal(true)
         )}
         setIsOpenModal={closeDrawerAndCallArg(() => setIsOpenModal(true))}
-        setIsOpenNotifyModal={closeDrawerAndCallArg(() =>
-          setIsOpenNotifyModal(true)
-        )}
         setIsOpenIntroductionModal={closeDrawerAndCallArg(() =>
           setIsOpenIntroductionModal(true)
         )}

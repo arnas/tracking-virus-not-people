@@ -15,7 +15,6 @@ export function MobileDrawer({
   results,
   setIsOpenResultsModal,
   setIsOpenModal,
-  setIsOpenNotifyModal,
   setIsOpenIntroductionModal,
 }) {
   return (
@@ -52,7 +51,8 @@ export function MobileDrawer({
             size="large"
             className="drawer-button"
             type={'link'}
-            onClick={() => setIsOpenNotifyModal(true)}
+            href="https://forms.gle/BeNP3soQRq97k4Qw6"
+            target="_blank"
           >
             <NotificationOutlined /> Pranešk
           </Button>
