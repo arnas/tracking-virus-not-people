@@ -1,53 +1,39 @@
 import React from 'react';
 import moment from 'moment';
 
-import {
-  Alert,
-  Button,
-  Col,
-  Divider,
-  Row,
-  Statistic,
-  Table,
-  Tabs,
-  Tag,
-  List,
-} from 'antd';
-import {
-  FacebookOutlined,
-  LinkedinOutlined,
-  TwitterOutlined,
-} from '@ant-design/icons';
+import {Alert, Button, Col, Divider, List, Row, Statistic, Table, Tabs, Tag,} from 'antd';
+import {FacebookOutlined, LinkedinOutlined, TwitterOutlined,} from '@ant-design/icons';
 import shortid from 'shortid';
-import { getDate } from '../utils/dateUtils';
+import {getDate} from '../utils/dateUtils';
 
 const { TabPane } = Tabs;
 
 const columns = [
   {
     title: 'Lankyta vieta',
-    dataIndex: ['visitedLocation', 'location', 'name'],
+    dataIndex: ['location', 'name'],
     rowKey: () => shortid(),
   },
   {
     title: 'Adresas',
-    dataIndex: ['visitedLocation', 'location', 'address'],
+    dataIndex: ['location', 'address'],
     rowKey: () => shortid(),
   },
   {
     title: 'Laikas',
-    dataIndex: ['visitedLocation', 'visitEndTs'],
+    dataIndex: ['visitEndTs'],
     render: (time) => moment.unix(time).format('YYYY-MM-DD HH:mm'),
     rowKey: () => shortid(),
   },
   {
     title: 'Rizikinga vieta',
     dataIndex: ['case', 'address'],
+    render: (address) => address ? address : "-",
   },
   {
     title: 'Užsikrėtusio žmogaus lankymosi laikas',
     dataIndex: ['case', 'time'],
-    render: (time) => getDate(moment(time, 'MM/DD/YYYY h:mm')),
+    render: (time) => time ? getDate(moment(time, 'MM/DD/YYYY h:mm')) : "-",
     rowKey: () => shortid(),
   },
   {

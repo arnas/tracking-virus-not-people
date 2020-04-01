@@ -1,44 +1,30 @@
 import cases from '../../data';
-import { getHomePlacesNames } from './futureRisk';
+import {getHomePlacesNames} from './futureRisk';
 
 const E7 = 10000000;
-const DURATION_START_LIMIT = 15;
-const DURATION_END_LIMIT = 180;
-const MAX_DISTANCE = 300;
-const MAX_TIME = 7200;
-const TIME_DIMINISHING_SPEED = 10;
-const DISTANCE_DIMINISHING_SPEED = 20;
-const WEIGHTS = [0.7, 0.2, 0.1];
-const OTHER_FACTORS_RATIO = 0.3;
+const max_probability_of_contact = 0.2;
+const max_probability_of_visiting_after_infected = 0.005;
+const max_probability_of_visiting_unsuspicious_shop = 0.03;
 
-const getTop3Cases = (place) => {
-  for (let i = 0; i < cases.length; i++) {
-    const _case = cases[i];
-    _case.distance =
-      distance(
-        _case.latitude,
-        _case.longitude,
-        place.location.latitudeE7 / E7,
-        place.location.longitudeE7 / E7
-      ) * 1000;
-    if (inRange(_case.timestamp, place.visitStartTs, place.visitEndTs)) {
-      _case.timePassed = 0;
-    } else {
-      _case.timePassed = (place.visitStartTs - _case.timestamp) / 60;
-      if (_case.timePassed < 0) {
-        _case.timePassed = 10000;
-      }
-    }
-  }
-  return cases
-    .sort((a, b) => {
-      if (a.distance !== b.distance) {
-        return a.distance - b.distance;
-      } else {
-        return a.timePassed - b.timePassed;
-      }
-    })
-    .filter((a, idx) => idx < 3);
+const logistic_probability_same_time = (number_of_minutes) => {
+  const K = max_probability_of_contact;
+  const P = 0.01;
+  const r = 0.1;
+  return (K * P) / (P + (K - P) * Math.pow(Math.E, -r * number_of_minutes));
+};
+
+const logistic_probability_same_place_from_initial = (number_of_minutes) => {
+  const K = 0.001;
+  const P = max_probability_of_visiting_after_infected;
+  const r = 0.0001;
+  return (K * P) / (P + (K - P) * Math.pow(Math.E,-r * number_of_minutes));
+};
+
+const logistic_probability_visiting_a_shop = (number_of_minutes) => {
+  const K = max_probability_of_visiting_unsuspicious_shop;
+  const P = 0.001;
+  const r = 0.1;
+  return (K * P) / (P + (K - P) * Math.pow(Math.E,-r * number_of_minutes));
 };
 
 const distance = (lat1, lon1, lat2, lon2) => {
@@ -50,8 +36,8 @@ const distance = (lat1, lon1, lat2, lon2) => {
     var theta = lon1 - lon2;
     var radtheta = (Math.PI * theta) / 180;
     var dist =
-      Math.sin(radlat1) * Math.sin(radlat2) +
-      Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+        Math.sin(radlat1) * Math.sin(radlat2) +
+        Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
     if (dist > 1) {
       dist = 1;
     }
@@ -59,92 +45,73 @@ const distance = (lat1, lon1, lat2, lon2) => {
     dist = (dist * 180) / Math.PI;
     dist = dist * 60 * 1.1515;
     dist = dist * 1.609344;
-    return dist;
+    return dist * 1000;
   }
 };
 
-const inRange = (ts, tsStart, tsEnd) => ts >= tsStart && ts <= tsEnd;
-
-const calculateHarmonicMean = (x, y) => (2 * x * y) / (x + y);
-
-const getDurationMultiplier = (duration) =>
-  Math.min(
-    1.5 + Math.max(duration - DURATION_START_LIMIT, 0) / DURATION_END_LIMIT,
-    2
-  );
-
-const durationBetweenTs = (ts1, ts2) => Math.floor(Math.abs(ts2 - ts1) / 60);
-
-const diminishingImportance = (raw, limit, speed) => {
-  const x = (limit - Math.min(limit, raw)) / limit;
-  return Math.max(0, Math.pow(Math.E, speed * (x - 1)));
+const getTimeTogether = (_case, visit) => {
+  if (visit.visitStartTs <= _case.timestamp) {
+    return _case.timestamp + _case.duration < visit.visitEndTs ? _case.duration : visit.visitEndTs - _case.timestamp;
+  } else if (visit.visitStartTs < _case.timestamp + _case.duration) {
+    return _case.timestamp + _case.duration > visit.visitEndTs ? visit.visitEndTs - visit.visitStartTs : _case.timestamp + _case.duration - visit.visitStartTs;
+  }
+  return 0;
 };
 
-const process = (places) => {
-  const componentsValues = [];
-  const homePlacesNames = getHomePlacesNames(places);
-  const existingComponents = new Set();
-
-  for (let i = 0; i < places.length; i++) {
-    if (homePlacesNames.indexOf(places[i].location.name) !== -1) {
+const process = (visits) => {
+  const twoWeeksAgoTs = new Date().getTime() / 1000 - 14 * 24 * 60 * 60;
+  const twoWeeksVisits = visits.filter((visit) => visit.visitEndTs > twoWeeksAgoTs);
+  const homePlacesNames = getHomePlacesNames(visits);
+  let relevantPlaces = [];
+  for (let i = 0; i < twoWeeksVisits.length; i++) {
+    // Ignore home places
+    if (homePlacesNames.indexOf(twoWeeksVisits[i].location.name) !== -1) {
       continue;
     }
-    const duration = durationBetweenTs(
-      places[i].visitStartTs,
-      places[i].visitEndTs
-    );
-    const durationMultiplier = getDurationMultiplier(duration);
-    const topCases = getTop3Cases(places[i]);
-    for (let j = 0; j < 3; j++) {
-      const distanceFactor = diminishingImportance(
-        topCases[j].distance,
-        MAX_DISTANCE,
-        DISTANCE_DIMINISHING_SPEED
-      );
-      const timeFactor = diminishingImportance(
-        topCases[j].timePassed,
-        MAX_TIME,
-        TIME_DIMINISHING_SPEED
-      );
-      const score =
-        (durationMultiplier *
-          calculateHarmonicMean(distanceFactor, timeFactor)) /
-        2;
 
-      const identifier = `${places[i].address}-${topCases[j].address}-${places[i].visitEndTs}-${topCases[j].timestamp}`;
+    const probs = [];
+    for (let j = 0; j < cases.length; j++) {
+      if (!cases[j].duration) {
+        cases[j].duration = 60 * 1000;
+      }
 
-      if (existingComponents.has(identifier)) continue;
+      // Ignore cases far away
+      if (distance(cases[j].latitude, cases[j].longitude, twoWeeksVisits[i].location.latitudeE7 / E7, twoWeeksVisits[i].location.longitudeE7 / E7) > 50) {
+        continue;
+      }
 
-      existingComponents.add(identifier);
+      // Ignore if visited before infected person
+      if (twoWeeksVisits[i].visitEndTs < cases[j].timestamp) {
+        continue;
+      }
 
-      componentsValues.push({
-        score,
-        duration,
-        durationMultiplier,
-        distanceFactor,
-        timeFactor,
-        distance: topCases[j].distance,
-        timePassed: topCases[j].timePassed,
-        visitedLocation: places[i],
-        case: topCases[j],
-      });
+      // Ignore if short visit
+      if (twoWeeksVisits[i].visitEndTs - twoWeeksVisits[i].visitStartTs < 3 * 60) {
+        continue;
+      }
+
+      let timeTogether = getTimeTogether(cases[j], twoWeeksVisits[i]) / 60;
+      if (timeTogether > 0) {
+        probs.push(1 - logistic_probability_same_time(timeTogether));
+      } else {
+        probs.push(1 - logistic_probability_same_place_from_initial((twoWeeksVisits[i].visitStartTs - cases[j].timestamp) / 60));
+      }
+
+      if (!twoWeeksVisits[i].case || twoWeeksVisits[i].case.timestamp < cases[j].timestamp) {
+        twoWeeksVisits[i].case = cases[j];
+      }
     }
+    probs.push(1 - logistic_probability_visiting_a_shop((twoWeeksVisits[i].visitEndTs - twoWeeksVisits[i].visitStartTs) / 60));
+    twoWeeksVisits[i].score = 1 - probs.reduce((a, b) => a * b);
+    relevantPlaces.push(twoWeeksVisits[i]);
   }
 
-  const sortedComponents = componentsValues
-    .sort((a, b) => b.score - a.score)
-    .filter((a, idx) => a.visitedLocation.visitEndTs > a.case.timestamp)
-    .filter((a, idx) => idx < 3);
-  let score = 0;
-  for (let i = 0; i < sortedComponents.length; ++i)
-    if (sortedComponents[i]) score += WEIGHTS[i] * sortedComponents[i].score;
-  score *= 1 - OTHER_FACTORS_RATIO;
+  relevantPlaces = relevantPlaces.filter((v) => v.score > 0).sort((a, b) => b.score - a.score);
+  const finalScore = 1 - relevantPlaces.reduce((a, b) => a * (1 - b.score), 1);
 
-  const sumScore = sortedComponents.reduce((sum, c) => sum + c.score, 0);
-  sortedComponents.forEach((c) => (c.score = c.score / sumScore));
   return {
-    score: score,
-    places: sortedComponents,
+    score: finalScore,
+    places: relevantPlaces,
   };
 };
 
