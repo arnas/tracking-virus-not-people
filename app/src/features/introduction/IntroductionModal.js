@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Modal } from 'antd';
+import { Modal, Button } from 'antd';
 
 export function IntroductionModal(props) {
   const title =
@@ -35,6 +35,14 @@ export function IntroductionModal(props) {
         Taip pat jūs galite pateikti savo Google istorijos duomenis ir mes
         automatiškai patikrinsime jūsų rizikos faktorių.
       </p>
+
+      <Button
+        style={{ padding: 0 }}
+        onClick={() => props.openPolicyModal()}
+        type="link"
+      >
+        Atidaryti slapukų politiką.
+      </Button>
     </Modal>
   );
 }
