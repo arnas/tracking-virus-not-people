@@ -116,6 +116,7 @@ export function CoronaMap() {
                 <span>1</span>
               </Tooltip>
               <Popup>
+                <p>{item.name}</p>
                 <p>
                   {item.address}, {item.city}
                 </p>
