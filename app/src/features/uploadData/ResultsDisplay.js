@@ -26,6 +26,11 @@ const { TabPane } = Tabs;
 const columns = [
   {
     title: 'Lankyta vieta',
+    dataIndex: ['visitedLocation', 'location', 'name'],
+    rowKey: () => shortid(),
+  },
+  {
+    title: 'Adresas',
     dataIndex: ['visitedLocation', 'location', 'address'],
     rowKey: () => shortid(),
   },
