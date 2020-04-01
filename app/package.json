@@ -14,6 +14,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^2.7.0",
     "react-leaflet": "^2.6.3",
     "react-leaflet-markercluster": "^2.0.0-rc3",
     "react-scripts": "3.4.1",

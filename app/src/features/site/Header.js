@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import { Button } from 'antd';
+import React, { useState, useEffect } from 'react';
+import { Button, notification } from 'antd';
+import ReactGA from 'react-ga';
 import './Header.css';
 import { UploadDataModal } from '../uploadData/UploadDataModal';
 import { IntroductionModal } from '../introduction/IntroductionModal';
+import { PolicyModal } from './PolicyModal';
 import {
   BarChartOutlined,
   NotificationOutlined,
@@ -15,7 +17,7 @@ import sekVirusaLogo from '../../sekvirusa_logo.svg';
 import { MobileDrawer } from './drawer/MobileDrawer';
 export function Header() {
   const [isOpenModal, setIsOpenModal] = useState(false);
-  const [isOpenIntroductionModal, setIsOpenIntroductionModal] = useState(false);
+  const [isOpenPolicyModal, setIsPolicyModal] = useState(false);
 
   const [isOpenResultsModal, setIsOpenResultsModal] = useState(false);
 
@@ -24,6 +26,49 @@ export function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const [mobileMode, setMobileMode] = useState(false);
+
+  const [isOpenIntroductionModal, setIsOpenIntroductionModal] = useState(
+    localStorage.getItem('introductionModalShown') != null
+      ? !localStorage.getItem('introductionModalShown')
+      : true
+  );
+
+  useEffect(() => {
+    if (!localStorage.getItem('cookieAccepted')) {
+      const key = `open${Date.now()}`;
+      const btn = (
+        <Button
+          type="primary"
+          size="small"
+          onClick={() => {
+            ReactGA.initialize('UA-161690757-1');
+            notification.close(key);
+            localStorage.setItem('cookieAccepted', true);
+          }}
+        >
+          Patvirtinti
+        </Button>
+      );
+      notification.info({
+        message: `Slapukų politika`,
+        description: (
+          <span>
+            Ši svetainė naudoja slapukus norint pagerinti jūsų patirtį
+            naudojantis šia svetaine. Paspauskite "Patvirtinti", jei sutinkate
+            su tuo.
+            <Button onClick={() => setIsPolicyModal(true)} type="link">
+              Daugiau informacijos
+            </Button>
+          </span>
+        ),
+        placement: 'bottomRight',
+        duration: 0,
+        closeIcon: <></>,
+        btn,
+        key,
+      });
+    }
+  }, []);
 
   const closeDrawerAndCallArg = (arg) => (e) => {
     setIsDrawerOpen(false);
@@ -96,7 +141,14 @@ export function Header() {
       <IntroductionModal
         style={mobileMode && { top: '20px' }}
         visible={isOpenIntroductionModal}
-        handleClose={() => setIsOpenIntroductionModal(false)}
+        handleClose={() => {
+          setIsOpenIntroductionModal(false);
+          localStorage.setItem('introductionModalShown', true);
+        }}
+        openPolicyModal={() => {
+          setIsPolicyModal(true);
+          setIsOpenIntroductionModal(false);
+        }}
       />
       <ResultsModal
         style={mobileMode && { top: '20px' }}
@@ -115,6 +167,10 @@ export function Header() {
         setIsOpenIntroductionModal={closeDrawerAndCallArg(() =>
           setIsOpenIntroductionModal(true)
         )}
+      />
+      <PolicyModal
+        visible={isOpenPolicyModal}
+        handleClose={() => setIsPolicyModal(false)}
       />
     </>
   );
