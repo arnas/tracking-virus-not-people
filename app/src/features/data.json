@@ -1702,10 +1702,10 @@
     "case_id": 141,
     "address": "Žemaitės al. 12",
     "name": "LIDL",
-    "city": "Kretinga",
+    "city": "Kretinga", 
     "time": "3/14/20 14:00",
-    "latitude": 54.703135,
-    "longitude": 25.2870293,
+    "latitude": 55.8928119,
+    "longitude": 21.2627471,
     "timestamp": 1584194400.0
   },
   {
@@ -2221,8 +2221,8 @@
     "name": "LIDL",
     "city": "Vilnius",
     "time": null,
-    "latitude": 54.7022629,
-    "longitude": 25.2859855,
+    "latitude": 54.703135,
+    "longitude": 25.2870293,
     "timestamp": 1585220400.0
   },
   {
