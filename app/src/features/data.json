@@ -26,9 +26,9 @@
     "address": "V. Grybo g. 21",
     "name": "Šilo Maxima",
     "city": "Vilnius",
-    "time": "3/9/2020 17:45",
-    "latitude": 54.7038389,
-    "longitude": 25.3162598378,
+    "time": "3/9/2020 17:45", 
+    "latitude": 54.7038171,
+    "longitude": 25.3161375,
     "timestamp": 1583768700.0,
     "case_id": 6
   },
@@ -49,8 +49,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "2/10/2020 14:20",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1581337200.0,
     "case_id": 7
   },
@@ -60,19 +60,19 @@
     "name": "Kauno stotis",
     "city": "Kaunas",
     "time": "3/10/2020 16:00",
-    "latitude": 54.8890485,
-    "longitude": 23.9278384,
+    "latitude": 54.8894315,
+    "longitude": 23.9281647,
     "timestamp": 1583848800.0,
     "case_id": 7
   },
   {
     "id": 6,
     "address": "Sodų g. 22",
-    "name": " Vilniaus stotis",
+    "name": "Vilniaus stotis",
     "city": "Vilnius",
     "time": "3/10/2020 17:00",
-    "latitude": 54.67076335,
-    "longitude": 25.2818261837,
+    "latitude": 54.6707641,
+    "longitude": 25.2818335,
     "timestamp": 1583852400.0,
     "case_id": 7
   },
@@ -153,8 +153,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "2/24/2020 15:30",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1582551000.0
   },
   {
@@ -163,8 +163,8 @@
     "name": "Kauno Akropolis",
     "city": "Kaunas",
     "time": "3/7/2020 6:00",
-    "latitude": 54.8905008,
-    "longitude": 23.9196209,
+    "latitude": 54.89077,
+    "longitude": 23.919353,
     "timestamp": 1583553600.0
   },
   {
@@ -173,8 +173,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "2/29/2020 6:00",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1582948800.0
   },
   {
@@ -193,8 +193,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/8/2020 14:20",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1583670000.0
   },
   {
@@ -203,28 +203,28 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/10/2020 14:20",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1583842800.0
   },
   {
     "id": 21,
     "address": "Sodų g. 22",
-    "name": " Vilniaus stotis",
+    "name": "Vilniaus stotis",
     "city": "Vilnius",
     "time": "3/11/2020 14:50",
-    "latitude": 54.67076335,
-    "longitude": 25.2818261837,
+    "latitude": 54.6707641,
+    "longitude": 25.2818335,
     "timestamp": 1583931000.0
   },
   {
     "id": 22,
     "address": "Klaipėdos pl. 42",
-    "name": " Palangos stotis",
+    "name": "Palangos stotis",
     "city": "Palanga",
     "time": "3/11/2020 18:50",
-    "latitude": 55.9130926,
-    "longitude": 21.0780725799,
+    "latitude": 55.913985,
+    "longitude": 21.078522,
     "timestamp": 1583945400.0
   },
   {
@@ -233,8 +233,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/12/2020 13:30",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584012600.0
   },
   {
@@ -243,8 +243,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/2020 20:40",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584211200.0
   },
   {
@@ -253,8 +253,8 @@
     "name": "Hesburger",
     "city": "Vilnius",
     "time": "3/12/2020 14:00",
-    "latitude": 54.72011815,
-    "longitude": 25.24388955,
+    "latitude": 54.7200756,
+    "longitude": 25.2438113,
     "timestamp": 1584014400.0
   },
   {
@@ -263,8 +263,8 @@
     "name": "Šaudymo centras",
     "city": "Vilnius",
     "time": "3/12/2020 15:00",
-    "latitude": 54.6953864,
-    "longitude": 25.4223978,
+    "latitude": 54.6928601,
+    "longitude": 25.4310985,
     "timestamp": 1584018000.0
   },
   {
@@ -283,8 +283,8 @@
     "name": "Hardman auto salonas",
     "city": "Kaunas",
     "time": "3/13/2020 11:30",
-    "latitude": 54.873879,
-    "longitude": 23.8917495905,
+    "latitude": 54.8739647,
+    "longitude": 23.8914021,
     "timestamp": 1584091800.0
   },
   {
@@ -293,8 +293,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/13/2020 23:55",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584136500.0
   },
   {
@@ -303,8 +303,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/9/2020 14:25",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1583756700.0
   },
   {
@@ -313,8 +313,8 @@
     "name": "Norfos vaistinė",
     "city": "Telšiai",
     "time": "3/6/2020 6:00",
-    "latitude": 55.97528555,
-    "longitude": 22.2677363639,
+    "latitude": 55.9752239,
+    "longitude": 22.2680157,
     "timestamp": 1583467200.0
   },
   {
@@ -323,8 +323,8 @@
     "name": "Maxima",
     "city": "Telšiai",
     "time": "3/10/2020 6:00",
-    "latitude": 55.9842972,
-    "longitude": 22.2521046,
+    "latitude": 55.9838247,
+    "longitude": 22.2538094,
     "timestamp": 1583812800.0
   },
   {
@@ -333,8 +333,8 @@
     "name": "MON",
     "city": "Telšiai",
     "time": "3/11/2020 16:00",
-    "latitude": 55.974179,
-    "longitude": 22.2678,
+    "latitude": 55.9743697,
+    "longitude": 22.2676845,
     "timestamp": 1583935200.0
   },
   {
@@ -343,18 +343,18 @@
     "name": "LIDL",
     "city": "Telšiai",
     "time": "3/11/2020 17:00",
-    "latitude": 55.9792337,
-    "longitude": 22.2623886,
+    "latitude": 55.975974,
+    "longitude": 22.2670139,
     "timestamp": 1583938800.0
   },
   {
     "id": 35,
     "address": "Luokės g. 76",
-    "name": "Norfos svaistinė",
+    "name": "Norfos vaistinė",
     "city": "Telšiai",
     "time": "3/12/2020 6:00",
-    "latitude": 55.97528555,
-    "longitude": 22.2677363639,
+    "latitude": 55.9752239,
+    "longitude": 22.2680157,
     "timestamp": 1583985600.0
   },
   {
@@ -363,8 +363,8 @@
     "name": "Norfa",
     "city": "Telšiai",
     "time": "3/13/2020 6:00",
-    "latitude": 55.97528555,
-    "longitude": 22.2677363639,
+    "latitude": 55.9752239,
+    "longitude": 22.2680157,
     "timestamp": 1584072000.0
   },
   {
@@ -373,8 +373,8 @@
     "name": "Klaipėdos autobusų stotis",
     "city": "Klaipeda",
     "time": "3/12/2020 16:30",
-    "latitude": 55.7198641,
-    "longitude": 21.1376272,
+    "latitude": 55.7195454,
+    "longitude": 21.1376812,
     "timestamp": 1584023400.0
   },
   {
@@ -383,8 +383,8 @@
     "name": "Kauno autobusų stotis",
     "city": "Kaunas",
     "time": "3/12/2020 14:00",
-    "latitude": 54.8890485,
-    "longitude": 23.9278384,
+    "latitude": 54.8894315,
+    "longitude": 23.9281647,
     "timestamp": 1584014400.0
   },
   {
@@ -393,8 +393,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/12/2020 12:10",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584007800.0
   },
   {
@@ -403,8 +403,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/15/2020 6:00",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584244800.0
   },
   {
@@ -413,8 +413,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/17/2020 2:00",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584403200.0
   },
   {
@@ -423,8 +423,8 @@
     "name": "Norfa",
     "city": "Elektrėnai",
     "time": "3/13/2020 16:00",
-    "latitude": 54.7878058,
-    "longitude": 24.6803446,
+    "latitude": 54.788319,
+    "longitude": 24.679909,
     "timestamp": 1584108000.0
   },
   {
@@ -433,8 +433,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/9/2020 6:00",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1583726400.0
   },
   {
@@ -443,8 +443,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/2020 6:00",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584158400.0
   },
   {
@@ -453,8 +453,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/14/2020 20:00",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584208800.0
   },
   {
@@ -463,8 +463,8 @@
     "name": "Norfa",
     "city": "Vilnius",
     "time": "3/14/2020 15:00",
-    "latitude": 54.7368678,
-    "longitude": 25.2679029,
+    "latitude": 54.7368742,
+    "longitude": 25.2666834,
     "timestamp": 1584190800.0
   },
   {
@@ -473,8 +473,8 @@
     "name": "Camelia",
     "city": "Kaunas",
     "time": "3/16/2020 14:30",
-    "latitude": 54.8854648,
-    "longitude": 23.8956459613,
+    "latitude": 54.885491,
+    "longitude": 23.895654,
     "timestamp": 1584361800.0
   },
   {
@@ -483,8 +483,8 @@
     "name": "Aibe",
     "city": "Kaunas",
     "time": "3/14/2020 14:00",
-    "latitude": 54.88575085,
-    "longitude": 23.8957239297,
+    "latitude": 54.8857771,
+    "longitude": 23.8958052,
     "timestamp": 1584187200.0
   },
   {
@@ -493,8 +493,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/11/2020 18:00",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1583942400.0
   },
   {
@@ -503,8 +503,8 @@
     "name": "Express Market",
     "city": "Kaunas",
     "time": "3/14/2020 14:00",
-    "latitude": 54.8847714,
-    "longitude": 23.8945653427,
+    "latitude": 54.8847372,
+    "longitude": 23.8947952,
     "timestamp": 1584187200.0
   },
   {
@@ -513,8 +513,8 @@
     "name": "Aleksoto turgus",
     "city": "Kaunas",
     "time": "3/14/2020 8:30",
-    "latitude": 54.8743478,
-    "longitude": 23.8912446,
+    "latitude": 54.8828207,
+    "longitude": 23.8942462,
     "timestamp": 1584167400.0
   },
   {
@@ -523,8 +523,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/13/2020 6:00",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584072000.0
   },
   {
@@ -533,8 +533,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/16/2020 6:00",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584331200.0
   },
   {
@@ -543,18 +543,18 @@
     "name": "Antakalnio Poliklinikos",
     "city": "Vilnius",
     "time": "3/13/2020 15:00",
-    "latitude": 54.7109414,
-    "longitude": 25.3163862845,
+    "latitude": 54.7110391,
+    "longitude": 25.3159643,
     "timestamp": 1584104400.0
   },
   {
     "id": 55,
     "address": "Polocko 44",
-    "name": "MediCA klinika",
+    "name": "MediCA klinika", 
     "city": "Vilnius",
     "time": "3/13/2020 14:00",
-    "latitude": 54.6820732,
-    "longitude": 25.3119981,
+    "latitude": 54.682359,
+    "longitude": 25.3099721,
     "timestamp": 1584100800.0
   },
   {
@@ -573,8 +573,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/2020 18:00",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584201600.0
   },
   {
@@ -583,8 +583,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/14/2020 6:00",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584158400.0
   },
   {
@@ -593,8 +593,8 @@
     "name": "Jonavos Geležinkelio stotis",
     "city": "Jonava",
     "time": "3/4/2020 6:00",
-    "latitude": 55.0905599,
-    "longitude": 24.2756546,
+    "latitude": 55.0934599,
+    "longitude": 24.2754417,
     "timestamp": 1583294400.0
   },
   {
@@ -613,8 +613,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/3/2020 6:00",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1583208000.0
   },
   {
@@ -623,8 +623,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/2020 23:35",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584221700.0
   },
   {
@@ -633,8 +633,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/16/2020",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584309600.0
   },
   {
@@ -643,8 +643,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/19/2020",
-    "latitude": 54.9699837,
-    "longitude": 24.0711689,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584568800.0
   },
   {
@@ -653,8 +653,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/16/2020",
-    "latitude": 54.9655698,
-    "longitude": 24.0736668,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584309600.0
   },
   {
@@ -663,8 +663,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/21/2020",
-    "latitude": 54.9665137,
-    "longitude": 24.075195,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584741600.0
   },
   {
@@ -673,8 +673,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/2020",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584136800.0
   },
   {
@@ -683,8 +683,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/15/2020",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584223200.0
   },
   {
@@ -693,8 +693,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/19/2020",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584568800.0
   },
   {
@@ -703,8 +703,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/2020",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584136800.0
   },
   {
@@ -713,8 +713,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/13/2020",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584050400.0
   },
   {
@@ -723,8 +723,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/3/2020",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1583186400.0
   },
   {
@@ -733,8 +733,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/2020",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584136800.0
   },
   {
@@ -743,8 +743,8 @@
     "name": "Norfa",
     "city": "Vilnius",
     "time": "3/15/2020",
-    "latitude": 54.7368678,
-    "longitude": 25.2679029,
+    "latitude": 54.7368742,
+    "longitude": 25.2666834,
     "timestamp": 1584223200.0
   },
   {
@@ -753,8 +753,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/2020",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584136800.0
   },
   {
@@ -763,8 +763,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/13/2020",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584050400.0
   },
   {
@@ -773,8 +773,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/13/2020",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584050400.0
   },
   {
@@ -793,8 +793,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/20/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1584655200.0
   },
   {
@@ -803,8 +803,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/19/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1584568800.0
   },
   {
@@ -813,8 +813,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/18/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1584482400.0
   },
   {
@@ -823,8 +823,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/17/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1584396000.0
   },
   {
@@ -833,8 +833,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/16/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1584309600.0
   },
   {
@@ -843,8 +843,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/15/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1584223200.0
   },
   {
@@ -853,8 +853,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/14/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1584136800.0
   },
   {
@@ -863,8 +863,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/13/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1584050400.0
   },
   {
@@ -873,8 +873,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/12/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1583964000.0
   },
   {
@@ -883,8 +883,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/11/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1583877600.0
   },
   {
@@ -893,8 +893,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/10/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1583791200.0
   },
   {
@@ -903,8 +903,8 @@
     "name": "Norfa XL",
     "city": "Jurbarkas",
     "time": "3/9/2020",
-    "latitude": 55.0789049,
-    "longitude": 22.7748412,
+    "latitude": 55.0786968,
+    "longitude": 22.7777776,
     "timestamp": 1583704800.0
   },
   {
@@ -913,8 +913,8 @@
     "name": "Palangos oro uostas",
     "city": "Palanga",
     "time": "3/9/2020 09:55",
-    "latitude": 55.9732225,
-    "longitude": 21.0926135,
+    "latitude": 55.97145935,
+    "longitude": 21.0972893706,
     "timestamp": 1583747700.0
   },
   {
@@ -923,8 +923,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/13/2020 23:00",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584140400.0
   },
   {
@@ -933,8 +933,8 @@
     "name": "IKI - Vyturys parduotuvė",
     "city": "Klaipėda",
     "time": "3/18/2020",
-    "latitude": 55.6642043,
-    "longitude": 21.1893481,
+    "latitude": 55.6643392,
+    "longitude": 21.1914267,
     "timestamp": 1584529200.0
   },
   {
@@ -943,8 +943,8 @@
     "name": "RIMI parduotuvė",
     "city": "Klaipėda",
     "time": "3/20/2020",
-    "latitude": 55.667809,
-    "longitude": 21.1946043,
+    "latitude": 55.6678062,
+    "longitude": 21.1967931,
     "timestamp": 1584698400.0
   },
   {
@@ -953,8 +953,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/18/2020 12:30",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584534600.0
   },
   {
@@ -963,8 +963,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/17/2020 12:30",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584405000.0
   },
   {
@@ -973,8 +973,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/09/2020",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1583735400.0
   },
   {
@@ -983,8 +983,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/19/2020",
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584541200.0
   },
   {
@@ -1003,8 +1003,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/21/2020 14:00",
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584799200.0
   },
   {
@@ -1013,8 +1013,8 @@
     "name": "Klaipėdos universitetinė ligoninė",
     "city": "Klaipėda",
     "time": "3/21/2020 18:00",
-    "latitude": 55.7245311,
-    "longitude": 21.1215997,
+    "latitude": 55.7537025,
+    "longitude": 21.1264239,
     "timestamp": 1584799200.0
   },
   {
@@ -1022,9 +1022,9 @@
     "address": "Butkų Juzės g. 9",
     "name": "Klaipėdos autobusų stotis",
     "city": "Klaipeda",
-    "time": "3/13/2020 20:00",
-    "latitude": 55.7198641,
-    "longitude": 21.1376272,
+    "time": "3/13/2020 20:00", 
+    "latitude": 55.7195454,
+    "longitude": 21.1376812,
     "timestamp": 1584023400.0
   },
   {
@@ -1055,8 +1055,8 @@
     "name": "LIDL",
     "city": "Telšiai",
     "time": "3/18/20 12:00",
-    "latitude": 55.975951699999996,
-    "longitude": 22.265764800000003,
+    "latitude": 55.975974,
+    "longitude": 22.2670139,
     "timestamp": 1584525600.0
   },
   {
@@ -1066,8 +1066,8 @@
     "name": "Maxima",
     "city": "Klaipėda",
     "time": "3/20/20 12:00",
-    "latitude": 55.671524399999996,
-    "longitude": 21.169112600000002,
+    "latitude": 55.6714661,
+    "longitude": 21.1698329,
     "timestamp": 1584698400.0
   },
   {
@@ -1077,8 +1077,8 @@
     "name": "LIDL",
     "city": "Klaipėda",
     "time": "3/21/20 12:00",
-    "latitude": 55.683799,
-    "longitude": 21.159686999999998,
+    "latitude": 55.6836682,
+    "longitude": 21.1603144,
     "timestamp": 1584784800.0
   },
   {
@@ -1088,8 +1088,8 @@
     "name": "Norfa \"Grandus\"",
     "city": "Klaipėda",
     "time": "3/21/20 12:00",
-    "latitude": 55.6846191,
-    "longitude": 21.1584893,
+    "latitude": 55.6846353,
+    "longitude": 21.1589051,
     "timestamp": 1584784800.0
   },
   {
@@ -1099,8 +1099,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/20 12:00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584180000.0
   },
   {
@@ -1111,7 +1111,7 @@
     "city": "Palanga",
     "time": "3/14/20 18:05",
     "latitude": 55.97145935,
-    "longitude": 21.09728937,
+    "longitude": 21.0972893706,
     "timestamp": 1584201900.0
   },
   {
@@ -1121,8 +1121,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/21/20 12:00",
-    "latitude": 54.9665137,
-    "longitude": 24.075195,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584784800.0
   },
   {
@@ -1132,8 +1132,8 @@
     "name": "LIDL",
     "city": "Klaipėda",
     "time": "3/20/20 12:00",
-    "latitude": 55.683799,
-    "longitude": 21.159686999999998,
+    "latitude": 55.6836682,
+    "longitude": 21.1603144,
     "timestamp": 1584698400.0
   },
   {
@@ -1143,8 +1143,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/18/20 12:00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584525600.0
   },
   {
@@ -1165,8 +1165,8 @@
     "name": "Maxima XX",
     "city": "Alytus",
     "time": "3/15/20 20:00",
-    "latitude": 54.3876912,
-    "longitude": 24.0269409,
+    "latitude": 54.3873442,
+    "longitude": 24.027778,
     "timestamp": 1584295200.0
   },
   {
@@ -1176,8 +1176,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/20/20 11:00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584694800.0
   },
   {
@@ -1187,8 +1187,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/20/20 10:50",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584694200.0
   },
   {
@@ -1198,8 +1198,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/20 12:00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584180000.0
   },
   {
@@ -1220,8 +1220,8 @@
     "name": "Norfa",
     "city": "Telšiai",
     "time": "3/16/20 12:00",
-    "latitude": 55.9752225,
-    "longitude": 22.266909899999998,
+    "latitude": 55.9753073,
+    "longitude": 22.267891,
     "timestamp": 1584352800.0
   },
   {
@@ -1242,8 +1242,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/21/20 12:00",
-    "latitude": 54.9665137,
-    "longitude": 24.075195,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584784800.0
   },
   {
@@ -1253,8 +1253,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/13/20 10:30",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584088200.0
   },
   {
@@ -1264,8 +1264,8 @@
     "name": "Norfa",
     "city": "Joniškis",
     "time": "3/14/20 16:00",
-    "latitude": 56.228077799999994,
-    "longitude": 23.602142999999998,
+    "latitude": 56.2279963,
+    "longitude": 23.6047489,
     "timestamp": 1584194400.0
   },
   {
@@ -1276,7 +1276,7 @@
     "city": "Joniškis",
     "time": "3/15/20 12:00",
     "latitude": 56.231699600000006,
-    "longitude": 23.605146899999998,
+    "longitude": 23.6058,
     "timestamp": 1584266400.0
   },
   {
@@ -1286,8 +1286,8 @@
     "name": "Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
     "city": "Palanga",
     "time": "3/14/20 15:00",
-    "latitude": 55.91767610000001,
-    "longitude": 21.0634634,
+    "latitude": 55.9177779,
+    "longitude": 21.0658336,
     "timestamp": 1584190800.0
   },
   {
@@ -1319,8 +1319,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/13/20 10:30",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584088200.0
   },
   {
@@ -1352,8 +1352,8 @@
     "name": "Šiaulių Centro poliklinika",
     "city": "Šiauliai",
     "time": "3/20/20 12:00",
-    "latitude": 55.9284955,
-    "longitude": 23.3125493,
+    "latitude": 55.9284906,
+    "longitude": 23.3132677,
     "timestamp": 1584698400.0
   },
   {
@@ -1363,8 +1363,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/13/20 10:30",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584088200.0
   },
   {
@@ -1374,8 +1374,8 @@
     "name": "Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
     "city": "Palanga",
     "time": "3/14/20 15:00",
-    "latitude": 55.91767610000001,
-    "longitude": 21.0634634,
+    "latitude": 55.9177779,
+    "longitude": 21.0658336,
     "timestamp": 1584190800.0
   },
   {
@@ -1407,8 +1407,8 @@
     "name": "Maxima",
     "city": "Joniškis",
     "time": "3/18/20 12:00",
-    "latitude": 56.2397625,
-    "longitude": 23.6170223,
+    "latitude": 56.2399637,
+    "longitude": 23.6199564,
     "timestamp": 1584525600.0
   },
   {
@@ -1418,8 +1418,8 @@
     "name": "Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
     "city": "Palanga",
     "time": "3/14/20 15:00",
-    "latitude": 55.91767610000001,
-    "longitude": 21.0634634,
+    "latitude": 55.9177779,
+    "longitude": 21.0658336,
     "timestamp": 1584190800.0
   },
   {
@@ -1451,8 +1451,8 @@
     "name": "Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
     "city": "Palanga",
     "time": "3/14/20 15:00",
-    "latitude": 55.91767610000001,
-    "longitude": 21.0634634,
+    "latitude": 55.9177779,
+    "longitude": 21.0658336,
     "timestamp": 1584190800.0
   },
   {
@@ -1484,8 +1484,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/7/20 12:00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1583575200.0
   },
   {
@@ -1495,8 +1495,8 @@
     "name": "UAB \"Moller Auto\"",
     "city": "Vilnius",
     "time": "3/9/20 17:00",
-    "latitude": 54.643172899999996,
-    "longitude": 25.2034415,
+    "latitude": 54.643325,
+    "longitude": 25.204458,
     "timestamp": 1583766000.0
   },
   {
@@ -1506,8 +1506,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/20 12:00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584180000.0
   },
   {
@@ -1517,8 +1517,8 @@
     "name": "IKI",
     "city": "Vilnius",
     "time": "3/14/20 20:00",
-    "latitude": 54.6669142,
-    "longitude": 25.214485500000002,
+    "latitude": 54.6669008,
+    "longitude": 25.2147818,
     "timestamp": 1584208800.0
   },
   {
@@ -1528,8 +1528,8 @@
     "name": "Norfa XXL",
     "city": "Vilnius",
     "time": "3/17/20 18:00",
-    "latitude": 54.736868799999996,
-    "longitude": 25.266342,
+    "latitude": 54.7368742,
+    "longitude": 25.2666834,
     "timestamp": 1584460800.0
   },
   {
@@ -1539,8 +1539,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/19/20 19:40",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584639600.0
   },
   {
@@ -1550,8 +1550,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/20 12:00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584180000.0
   },
   {
@@ -1561,8 +1561,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/15/20 18:00",
-    "latitude": 54.9665137,
-    "longitude": 24.075195,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584288000.0
   },
   {
@@ -1572,8 +1572,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/11/20 12:00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1583920800.0
   },
   {
@@ -1583,8 +1583,8 @@
     "name": "IKI",
     "city": "Vilnius",
     "time": "3/17/20 18:30",
-    "latitude": 54.74403879999999,
-    "longitude": 25.2776632,
+    "latitude": 54.7431369,
+    "longitude": 25.2787519,
     "timestamp": 1584462600.0
   },
   {
@@ -1594,8 +1594,8 @@
     "name": "Vynoteka",
     "city": "Vilnius",
     "time": "3/20/20 19:00",
-    "latitude": 54.76972320000001,
-    "longitude": 25.2708829,
+    "latitude": 54.7697038,
+    "longitude": 25.2720277,
     "timestamp": 1584723600.0
   },
   {
@@ -1605,8 +1605,8 @@
     "name": "RIMI",
     "city": "Vilnius",
     "time": "3/21/20 13:00",
-    "latitude": 54.73992239999999,
-    "longitude": 25.2737711,
+    "latitude": 54.739896,
+    "longitude": 25.274646,
     "timestamp": 1584788400.0
   },
   {
@@ -1627,8 +1627,8 @@
     "name": "Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
     "city": "Palanga",
     "time": "3/14/20 15:00",
-    "latitude": 55.91767610000001,
-    "longitude": 21.0634634,
+    "latitude": 55.9177779,
+    "longitude": 21.0658336,
     "timestamp": 1584190800.0
   },
   {
@@ -1660,19 +1660,19 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/17/20 17:00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584457200.0
   },
   {
     "id": 162,
     "case_id": 139.0,
-    "address": "Santaikos g. 52,",
+    "address": "Santaikos g. 52",
     "name": "Maxima",
     "city": "Alytus",
     "time": "3/15/20 20:00",
-    "latitude": 54.3863205,
-    "longitude": 24.0052277,
+    "latitude": 54.3878836,
+    "longitude": 24.0272702,
     "timestamp": 1584295200.0
   },
   {
@@ -1693,8 +1693,8 @@
     "name": "Euro vaistinė",
     "city": "Vilnius",
     "time": "3/19/20 12:00",
-    "latitude": 54.6870709,
-    "longitude": 25.2787275,
+    "latitude": 54.6870486,
+    "longitude": 25.2790924,
     "timestamp": 1584612000.0
   },
   {
@@ -1704,8 +1704,8 @@
     "name": "LIDL",
     "city": "Kretinga",
     "time": "3/14/20 14:00",
-    "latitude": 55.8942178,
-    "longitude": 21.2560311,
+    "latitude": 55.8928119,
+    "longitude": 21.2627471,
     "timestamp": 1584194400.0
   },
   {
@@ -1716,7 +1716,7 @@
     "city": "Telšių raj.",
     "time": "3/15/20 14:00",
     "latitude": 55.9997949,
-    "longitude": 22.2394213,
+    "longitude": 22.24161,
     "timestamp": 1584280800.0
   },
   {
@@ -1726,15 +1726,15 @@
     "name": "Norfa",
     "city": "Telšiai",
     "time": "3/20/2020 17:00",
-    "latitude": 55.9756669,
-    "longitude": 22.2665582,
+    "latitude": 55.9753073,
+    "longitude": 22.267891,
     "timestamp": 1584716400.0
   },
   {
     "id": 168,
     "case_id": 144.0,
     "address": "Naujoji g. 4",
-    "name": "Varduvos kavin?",
+    "name": "Varduvos kavinė",
     "city": "Mažeikiai",
     "time": "3/20/2020 12:00",
     "latitude": 56.3163304,
@@ -1759,8 +1759,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/18/2020 12:00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584525600.0
   },
   {
@@ -1770,8 +1770,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/14/2020 12:00",
-    "latitude": 54.9665137,
-    "longitude": 24.075195,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584180000.0
   },
   {
@@ -1781,8 +1781,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": "3/20/2020 12:00",
-    "latitude": 54.9665137,
-    "longitude": 24.075195,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584698400.0
   },
   {
@@ -1847,8 +1847,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/18/2020 12:00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584525600.0
   },
   {
@@ -1858,8 +1858,8 @@
     "name": "Euro vaistinė",
     "city": "Kaunas",
     "time": "3/29/2020 12:00",
-    "latitude": 54.8650469,
-    "longitude": 23.886237,
+    "latitude": 54.8654068,
+    "longitude": 23.8867403,
     "timestamp": 1585472400.0
   },
   {
@@ -1908,7 +1908,7 @@
   },
   {
     "id": 184,
-    "case_id": 167,
+    "case_id": 167, 
     "address": "Pulko g. 51A",
     "name": "Rimi",
     "city": "Alytus",
@@ -1924,8 +1924,8 @@
     "name": "Norfa",
     "city": "Alytus",
     "time": "3/26/2020 12: 00",
-    "latitude": 54.3964377,
-    "longitude": 24.0282889,
+    "latitude": 54.396796,
+    "longitude": 24.0280823,
     "timestamp": 1585216800.0
   },
   {
@@ -1935,8 +1935,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": "3/14/2020 12: 00",
-    "latitude": 54.6408829,
-    "longitude": 25.269797600000004,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584180000.0
   },
   {
@@ -1946,8 +1946,8 @@
     "name": "Palangos oro uostas",
     "city": "Palanga",
     "time": "3/24/2020 18: 00",
-    "latitude": 55.9732225,
-    "longitude": 21.092613500000002,
+    "latitude": 55.97145935,
+    "longitude": 21.0972893706,
     "timestamp": 1585065600.0
   },
   {
@@ -1957,8 +1957,8 @@
     "name": "Palangos oro uostas",
     "city": "Palanga",
     "time": "3/24/2020 18: 00",
-    "latitude": 55.9732225,
-    "longitude": 21.092613500000002,
+    "latitude": 55.97145935,
+    "longitude": 21.0972893706,
     "timestamp": 1585065600.0
   },
   {
@@ -1968,8 +1968,8 @@
     "name": "Palangos oro uostas",
     "city": "Palanga",
     "time": "3/24/2020 18: 00",
-    "latitude": 55.9732225,
-    "longitude": 21.092613500000002,
+    "latitude": 55.97145935,
+    "longitude": 21.0972893706,
     "timestamp": 1585065600.0
   },
   {
@@ -2034,7 +2034,7 @@
     "name": "Euro vaistinė",
     "city": "Alytus",
     "time": "3/26/2020 10: 20",
-    "latitude": 54.39649789999999,
+    "latitude": 54.39649789999999, 
     "longitude": 24.0414198,
     "timestamp": 1585210800.0
   },
@@ -2067,7 +2067,7 @@
     "name": "Mėsos parduotuvė",
     "city": "Alytus",
     "time": "3/18/2020 12: 00",
-    "latitude": 54.392432799999995,
+    "latitude": 54.3924328,
     "longitude": 24.0227022,
     "timestamp": 1584525600.0
   },
@@ -2089,20 +2089,9 @@
     "name": "NORFA",
     "city": "Tauragė",
     "time": null,
-    "latitude": 55.2593649,
-    "longitude": 22.2980658,
+    "latitude": 55.2593701,
+    "longitude": 22.3002237,
     "timestamp": 1584651600.0
-  },
-  {
-    "id": 202,
-    "case_id": 183,
-    "address": "Kudirkos g. 2",
-    "name": "Mobilusis patikros punktas",
-    "city": "Tauragė",
-    "time": null,
-    "latitude": 55.253942,
-    "longitude": 22.2801445,
-    "timestamp": 1584284400.0
   },
   {
     "id": 203,
@@ -2111,8 +2100,8 @@
     "name": "Palangos Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9177808,
-    "longitude": 21.0636446,
+    "latitude": 55.9177779,
+    "longitude": 21.0658336,
     "timestamp": 1584198000.0
   },
   {
@@ -2144,8 +2133,8 @@
     "name": "Kauno oro uostas",
     "city": "Kaunas",
     "time": null,
-    "latitude": 54.9671759,
-    "longitude": 24.0740002,
+    "latitude": 54.967318,
+    "longitude": 24.073773,
     "timestamp": 1584111600.0
   },
   {
@@ -2155,8 +2144,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": null,
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1585062000.0
   },
   {
@@ -2166,8 +2155,8 @@
     "name": "Viešbutis ,,Druskų miestas''",
     "city": "Druskininkai",
     "time": null,
-    "latitude": 54.0211415,
-    "longitude": 23.9742753,
+    "latitude": 54.0211384,
+    "longitude": 23.976464,
     "timestamp": 1584180000.0
   },
   {
@@ -2177,8 +2166,8 @@
     "name": "Viešbutis ,,Druskų miestas''",
     "city": "Druskininkai",
     "time": null,
-    "latitude": 54.0211415,
-    "longitude": 23.9742753,
+    "latitude": 54.0211384,
+    "longitude": 23.976464,
     "timestamp": 1584266400.0
   },
   {
@@ -2188,8 +2177,8 @@
     "name": "Restoranas ,,Sicilia picerija''",
     "city": "Druskininkai",
     "time": null,
-    "latitude": 54.0176924,
-    "longitude": 23.9739733,
+    "latitude": 54.0176893,
+    "longitude": 23.976162,
     "timestamp": 1584266400.0
   },
   {
@@ -2199,8 +2188,8 @@
     "name": "VšĮ Vilniaus universiteto Santaros klinikos",
     "city": "Vilnius",
     "time": null,
-    "latitude": 54.7526891,
-    "longitude": 25.2769325,
+    "latitude": 54.7577276,
+    "longitude": 25.2699682,
     "timestamp": 1584871200.0
   },
   {
@@ -2210,8 +2199,8 @@
     "name": "VšĮ Vilniaus universiteto Santaros klinikos",
     "city": "Vilnius",
     "time": null,
-    "latitude": 54.7526891,
-    "longitude": 25.2769325,
+    "latitude": 54.7577276,
+    "longitude": 25.2699682,
     "timestamp": 1585044000.0
   },
   {
@@ -2221,8 +2210,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": null,
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584357300.0
   },
   {
@@ -2232,8 +2221,8 @@
     "name": "LIDL",
     "city": "Vilnius",
     "time": null,
-    "latitude": 54.7031381,
-    "longitude": 25.2848406,
+    "latitude": 54.7022629,
+    "longitude": 25.2859855,
     "timestamp": 1585220400.0
   },
   {
@@ -2243,8 +2232,8 @@
     "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "time": null,
-    "latitude": 54.6408829,
-    "longitude": 25.2697976,
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
     "timestamp": 1584228600.0
   },
   {
@@ -2254,8 +2243,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1584439200.0
   },
   {
@@ -2265,8 +2254,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1584525600.0
   },
   {
@@ -2276,8 +2265,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1584612000.0
   },
   {
@@ -2287,8 +2276,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1584698400.0
   },
   {
@@ -2298,8 +2287,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1584784800.0
   },
   {
@@ -2309,8 +2298,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1584871200.0
   },
   {
@@ -2320,8 +2309,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1584957600.0
   },
   {
@@ -2331,8 +2320,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1585044000.0
   },
   {
@@ -2342,8 +2331,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1585130400.0
   },
   {
@@ -2353,8 +2342,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1585216800.0
   },
   {
@@ -2364,8 +2353,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1585303200.0
   },
   {
@@ -2375,8 +2364,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1585389600.0
   },
   {
@@ -2386,8 +2375,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1585389600.0
   },
   {
@@ -2397,8 +2386,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1585562400.0
   },
   {
@@ -2408,8 +2397,8 @@
     "name": "UAB „Palangos linas“",
     "city": "Palanga",
     "time": null,
-    "latitude": 55.9370377,
-    "longitude": 21.073435,
+    "latitude": 55.9370347,
+    "longitude": 21.0756237,
     "timestamp": 1585648800.0
   }
 ]
