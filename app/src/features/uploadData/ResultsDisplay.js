@@ -37,7 +37,7 @@ const columns = [
     rowKey: () => shortid(),
   },
   {
-    title: 'Koeficientas',
+    title: 'Užsikrėtimo tikimybė',
     dataIndex: 'score',
     key: 'score',
     render: (score) => Number(score.toFixed(5) * 100).toFixed(2) + ' %',
@@ -146,7 +146,7 @@ export function ResultDisplay(props) {
       {percentageAtHome >= 60 && (
         <div>
           <p>
-            Jūs praleidote net <strong>{percentageAtHome}% </strong> laiko
+            Per pastarąsias dvi savaites, jūs praleidote net <strong>{percentageAtHome}% </strong> laiko
             namie. Pasidalinkite apie tai socialinuose tinkluose!{' '}
             <Tag color="green">#stayathome</Tag>{' '}
           </p>
@@ -212,13 +212,10 @@ export function ResultDisplay(props) {
             size="small"
             bordered
             dataSource={[
-              'Karantinas pratęsiamas dviem savaitėms - iki balandžio 13d.',
               'Parkuose ir viešose vietose lankykitės ne didesnėse nei dviejų asmenų grupėse.',
               'Į prekybos paslaugų vietas eikite vienas.',
-              'Viešose vietose dėvėkite apsaugos kaukes, respiratorius arva kitas nosį ir burną dengiančias priemones.',
-              'Jei grįžote iš užsienio - jums privalomas 14 dienų karantinas.',
-              'Iki gegužės 1 d. 00:00 val. degalų pardavimo vietose gali būti prekiaujama benzinu, kuriame yra mažiau nei 10 procentų biodegalų.',
-              'Grįžus iš užsienio ir nesilaikant karantino gresia baudžiamoji atsakomybė, o už smulkesnius nusižengimus policija gali skirti pinigines baudas.',
+              'Viešose vietose dėvėkite apsaugos kaukes, respiratorius arba kitas nosį ir burną dengiančias priemones.',
+              'Grįžus namo, iškarto su muilu ir šiltu vandeniu plaukite rankas bent 20 sekundžių.'
             ]}
             renderItem={(item) => <List.Item>{item}</List.Item>}
           />
