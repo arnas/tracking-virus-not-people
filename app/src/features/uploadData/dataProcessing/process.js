@@ -4,7 +4,7 @@ import {getHomePlacesNames} from './futureRisk';
 const E7 = 10000000;
 const max_probability_of_contact = 0.2;
 const max_probability_of_visiting_after_infected = 0.005;
-const max_probability_of_visiting_unsuspicious_shop = 0.03;
+const max_probability_of_visiting_unsuspicious_shop = 0.007;
 
 const logistic_probability_same_time = (number_of_minutes) => {
   const K = max_probability_of_contact;
@@ -23,7 +23,7 @@ const logistic_probability_same_place_from_initial = (number_of_minutes) => {
 const logistic_probability_visiting_a_shop = (number_of_minutes) => {
   const K = max_probability_of_visiting_unsuspicious_shop;
   const P = 0.001;
-  const r = 0.1;
+  const r = 0.07;
   return (K * P) / (P + (K - P) * Math.pow(Math.E,-r * number_of_minutes));
 };
 
