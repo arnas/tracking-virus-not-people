@@ -1,5 +1,5 @@
 import cases from '../../data';
-import {getHomePlacesNames} from './futureRisk';
+import { getHomePlacesNames } from './futureRisk';
 
 const E7 = 10000000;
 const max_probability_of_contact = 0.2;
@@ -17,14 +17,14 @@ const logistic_probability_same_place_from_initial = (number_of_minutes) => {
   const K = 0.001;
   const P = max_probability_of_visiting_after_infected;
   const r = 0.0001;
-  return (K * P) / (P + (K - P) * Math.pow(Math.E,-r * number_of_minutes));
+  return (K * P) / (P + (K - P) * Math.pow(Math.E, -r * number_of_minutes));
 };
 
 const logistic_probability_visiting_a_shop = (number_of_minutes) => {
   const K = max_probability_of_visiting_unsuspicious_shop;
   const P = 0.001;
   const r = 0.07;
-  return (K * P) / (P + (K - P) * Math.pow(Math.E,-r * number_of_minutes));
+  return (K * P) / (P + (K - P) * Math.pow(Math.E, -r * number_of_minutes));
 };
 
 const distance = (lat1, lon1, lat2, lon2) => {
@@ -36,8 +36,8 @@ const distance = (lat1, lon1, lat2, lon2) => {
     var theta = lon1 - lon2;
     var radtheta = (Math.PI * theta) / 180;
     var dist =
-        Math.sin(radlat1) * Math.sin(radlat2) +
-        Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+      Math.sin(radlat1) * Math.sin(radlat2) +
+      Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
     if (dist > 1) {
       dist = 1;
     }
@@ -51,22 +51,33 @@ const distance = (lat1, lon1, lat2, lon2) => {
 
 const getTimeTogether = (_case, visit) => {
   if (visit.visitStartTs <= _case.timestamp) {
-    return _case.timestamp + _case.duration < visit.visitEndTs ? _case.duration : visit.visitEndTs - _case.timestamp;
+    return _case.timestamp + _case.duration < visit.visitEndTs
+      ? _case.duration
+      : visit.visitEndTs - _case.timestamp;
   } else if (visit.visitStartTs < _case.timestamp + _case.duration) {
-    return _case.timestamp + _case.duration > visit.visitEndTs ? visit.visitEndTs - visit.visitStartTs : _case.timestamp + _case.duration - visit.visitStartTs;
+    return _case.timestamp + _case.duration > visit.visitEndTs
+      ? visit.visitEndTs - visit.visitStartTs
+      : _case.timestamp + _case.duration - visit.visitStartTs;
   }
   return 0;
 };
 
 const process = (visits) => {
   const twoWeeksAgoTs = new Date().getTime() / 1000 - 14 * 24 * 60 * 60;
-  const twoWeeksVisits = visits.filter((visit) => visit.visitEndTs > twoWeeksAgoTs);
+  const twoWeeksVisits = visits.filter(
+    (visit) => visit.visitEndTs > twoWeeksAgoTs
+  );
   const homePlacesNames = getHomePlacesNames(visits);
   let relevantPlaces = [];
   for (let i = 0; i < twoWeeksVisits.length; i++) {
     // Ignore home places
-    if (twoWeeksVisits[i].location.address.includes(twoWeeksVisits[i].location.name) ||
-        homePlacesNames.indexOf(twoWeeksVisits[i].location.name) !== -1) {
+    if (
+      (twoWeeksVisits[i].location.address &&
+        twoWeeksVisits[i].location.address.includes(
+          twoWeeksVisits[i].location.name
+        )) ||
+      homePlacesNames.indexOf(twoWeeksVisits[i].location.name) !== -1
+    ) {
       continue;
     }
 
@@ -77,7 +88,14 @@ const process = (visits) => {
       }
 
       // Ignore cases far away
-      if (distance(cases[j].latitude, cases[j].longitude, twoWeeksVisits[i].location.latitudeE7 / E7, twoWeeksVisits[i].location.longitudeE7 / E7) > 50) {
+      if (
+        distance(
+          cases[j].latitude,
+          cases[j].longitude,
+          twoWeeksVisits[i].location.latitudeE7 / E7,
+          twoWeeksVisits[i].location.longitudeE7 / E7
+        ) > 50
+      ) {
         continue;
       }
 
@@ -87,7 +105,10 @@ const process = (visits) => {
       }
 
       // Ignore if short visit
-      if (twoWeeksVisits[i].visitEndTs - twoWeeksVisits[i].visitStartTs < 3 * 60) {
+      if (
+        twoWeeksVisits[i].visitEndTs - twoWeeksVisits[i].visitStartTs <
+        3 * 60
+      ) {
         continue;
       }
 
@@ -95,19 +116,34 @@ const process = (visits) => {
       if (timeTogether > 0) {
         probs.push(1 - logistic_probability_same_time(timeTogether));
       } else {
-        probs.push(1 - logistic_probability_same_place_from_initial((twoWeeksVisits[i].visitStartTs - cases[j].timestamp) / 60));
+        probs.push(
+          1 -
+            logistic_probability_same_place_from_initial(
+              (twoWeeksVisits[i].visitStartTs - cases[j].timestamp) / 60
+            )
+        );
       }
 
-      if (!twoWeeksVisits[i].case || twoWeeksVisits[i].case.timestamp < cases[j].timestamp) {
+      if (
+        !twoWeeksVisits[i].case ||
+        twoWeeksVisits[i].case.timestamp < cases[j].timestamp
+      ) {
         twoWeeksVisits[i].case = cases[j];
       }
     }
-    probs.push(1 - logistic_probability_visiting_a_shop((twoWeeksVisits[i].visitEndTs - twoWeeksVisits[i].visitStartTs) / 60));
+    probs.push(
+      1 -
+        logistic_probability_visiting_a_shop(
+          (twoWeeksVisits[i].visitEndTs - twoWeeksVisits[i].visitStartTs) / 60
+        )
+    );
     twoWeeksVisits[i].score = 1 - probs.reduce((a, b) => a * b);
     relevantPlaces.push(twoWeeksVisits[i]);
   }
 
-  relevantPlaces = relevantPlaces.filter((v) => v.score > 0).sort((a, b) => b.score - a.score);
+  relevantPlaces = relevantPlaces
+    .filter((v) => v.score > 0)
+    .sort((a, b) => b.score - a.score);
   const finalScore = 1 - relevantPlaces.reduce((a, b) => a * (1 - b.score), 1);
 
   return {
