@@ -34,16 +34,19 @@ export function Header() {
   );
 
   useEffect(() => {
-    if (!localStorage.getItem('cookieAccepted')) {
+    if (!localStorage.getItem('cookieAcceptedV2')) {
       const key = `open${Date.now()}`;
       const btn = (
         <Button
           type="primary"
           size="small"
           onClick={() => {
-            ReactGA.initialize('UA-161690757-1');
+            ReactGA.initialize('UA-161690757-1', {
+              cookieDomain: 'auto',
+            });
+            ReactGA.pageview(window.location.pathname + window.location.search);
             notification.close(key);
-            localStorage.setItem('cookieAccepted', true);
+            localStorage.setItem('cookieAcceptedV2', true);
           }}
         >
           Patvirtinti
