@@ -65,7 +65,8 @@ const process = (visits) => {
   let relevantPlaces = [];
   for (let i = 0; i < twoWeeksVisits.length; i++) {
     // Ignore home places
-    if (homePlacesNames.indexOf(twoWeeksVisits[i].location.name) !== -1) {
+    if (twoWeeksVisits[i].location.address.includes(twoWeeksVisits[i].location.name) &&
+        homePlacesNames.indexOf(twoWeeksVisits[i].location.name) !== -1) {
       continue;
     }
 
