@@ -26,7 +26,7 @@
     "address": "V. Grybo g. 21",
     "name": "Šilo Maxima",
     "city": "Vilnius",
-    "time": "3/9/2020 17:45", 
+    "time": "3/9/2020 17:45",
     "latitude": 54.7038171,
     "longitude": 25.3161375,
     "timestamp": 1583768700.0,
@@ -550,7 +550,7 @@
   {
     "id": 55,
     "address": "Polocko 44",
-    "name": "MediCA klinika", 
+    "name": "MediCA klinika",
     "city": "Vilnius",
     "time": "3/13/2020 14:00",
     "latitude": 54.682359,
@@ -1022,7 +1022,7 @@
     "address": "Butkų Juzės g. 9",
     "name": "Klaipėdos autobusų stotis",
     "city": "Klaipeda",
-    "time": "3/13/2020 20:00", 
+    "time": "3/13/2020 20:00",
     "latitude": 55.7195454,
     "longitude": 21.1376812,
     "timestamp": 1584023400.0
@@ -1614,7 +1614,7 @@
     "case_id": 132.0,
     "address": "J. Jasinskio g. 16",
     "name": "IKI",
-    "city": "Vilnius",  
+    "city": "Vilnius",
     "time": "3/15/20 12:00",
     "latitude": 54.6881182,
     "longitude": 25.2615229,
@@ -1702,7 +1702,7 @@
     "case_id": 141,
     "address": "Žemaitės al. 12",
     "name": "LIDL",
-    "city": "Kretinga", 
+    "city": "Kretinga",
     "time": "3/14/20 14:00",
     "latitude": 55.8928119,
     "longitude": 21.2627471,
@@ -1908,7 +1908,7 @@
   },
   {
     "id": 184,
-    "case_id": 167, 
+    "case_id": 167,
     "address": "Pulko g. 51A",
     "name": "Rimi",
     "city": "Alytus",
@@ -2034,7 +2034,7 @@
     "name": "Euro vaistinė",
     "city": "Alytus",
     "time": "3/26/2020 10: 20",
-    "latitude": 54.39649789999999, 
+    "latitude": 54.39649789999999,
     "longitude": 24.0414198,
     "timestamp": 1585210800.0
   },
@@ -2400,5 +2400,104 @@
     "latitude": 55.9370347,
     "longitude": 21.0756237,
     "timestamp": 1585648800.0
+  },
+  {
+    "id": 231,
+    "case_id": 199.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/10/2020 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1583834400.0
+  },
+  {
+    "id": 232,
+    "case_id": 203.0,
+    "address": "Pulko g. 98 a",
+    "name": "Maxima",
+    "city": "Alytus",
+    "time": "3/20/2020 19:00",
+    "latitude": 54.3884336,
+    "longitude": 24.0427,
+    "timestamp": 1584723600.0
+  },
+  {
+    "id": 233,
+    "case_id": 203.0,
+    "address": "Naujoji g. 2c",
+    "name": "Iki",
+    "city": "Alytus",
+    "time": "3/23/2020 18:00",
+    "latitude": 54.3963979,
+    "longitude": 24.0360158,
+    "timestamp": 1584979200.0
+  },
+  {
+    "id": 234,
+    "case_id": 203.0,
+    "address": "Naujoji g. 2c",
+    "name": "Iki",
+    "city": "Alytus",
+    "time": "3/24/2020 12:00",
+    "latitude": 54.3963979,
+    "longitude": 24.0360158,
+    "timestamp": 1585044000.0
+  },
+  {
+    "id": 235,
+    "case_id": 205.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/13/2020 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584093600.0
+  },
+  {
+    "id": 236,
+    "case_id": 207.0,
+    "address": "Sukilėlių pr. 85",
+    "name": "Parduotuvė",
+    "city": "Kaunas",
+    "time": "3/21/2020 12:00",
+    "latitude": 54.9277427,
+    "longitude": 23.9265556,
+    "timestamp": 1584784800.0
+  },
+  {
+    "id": 237,
+    "case_id": 207.0,
+    "address": "Sukilėlių pr. 85",
+    "name": "Parduotuvė",
+    "city": "Kaunas",
+    "time": "3/23/2020 12:00",
+    "latitude": 54.9277427,
+    "longitude": 23.9265556,
+    "timestamp": 1584957600.0
+  },
+  {
+    "id": 238,
+    "case_id": 210.0,
+    "address": "Oro uosto g. 7",
+    "name": "Kauno oro uostas",
+    "city": "Kaunas",
+    "time": "3/19/2020 12:00",
+    "latitude": 54.9665137,
+    "longitude": 24.075195,
+    "timestamp": 1584612000.0
+  },
+  {
+    "id": 239,
+    "case_id": 211.0,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/15/2020 12:00",
+    "latitude": 54.6408829,
+    "longitude": 25.269797600000004,
+    "timestamp": 1584266400.0
   }
 ]
