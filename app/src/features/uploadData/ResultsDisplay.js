@@ -33,7 +33,7 @@ const columns = [
   {
     title: 'Užsikrėtusio žmogaus lankymosi laikas',
     dataIndex: ['case', 'time'],
-    render: (time) => time ? getDate(moment(time, 'MM/DD/YYYY h:mm')) : "-",
+    render: (time) => time ? getDate(moment(time, 'MM/DD/YYYY h:mm')) : "Žinomo užsikrėtusio žmogaus kol kas nebuvo",
     rowKey: () => shortid(),
   },
   {
@@ -181,8 +181,8 @@ export function ResultDisplay(props) {
       <Tabs style={{ marginTop: '10px' }} type="card">
         <TabPane tab="Užsikrėtimo rizika" key="1">
           <p>
-            Lentelėje yra pateikiamos TOP 3 vietos, kurios turėjo įtakos jūsų
-            užsikrėtimo rizikos koficientui.
+            Lentelėje yra pateikiamos TOP vietos, kurios turėjo įtakos jūsų
+            užsikrėtimo rizikos tikimybei.
           </p>
           <Table
             pagination={{ defaultPageSize: 5, hideOnSinglePage: true }}
