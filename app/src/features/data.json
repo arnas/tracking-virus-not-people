@@ -2503,7 +2503,7 @@
   {
     "id": 240,
     "addresses": "Oro uosto g. 4",
-    "action_place_names": "Kauno oro uostas",
+    "name": "Kauno oro uostas",
     "city": "Kaunas",
     "Time": "2/19/2020 12:00",
     "latitude": 54.967318000000006,
@@ -2513,7 +2513,7 @@
   {
     "id": 241,
     "addresses": "Oro uosto g. 4",
-    "action_place_names": "Kauno oro uostas",
+    "name": "Kauno oro uostas",
     "city": "Kaunas",
     "Time": "3/14/2020 20:00",
     "latitude": 54.967318000000006,
@@ -2523,7 +2523,7 @@
   {
     "id": 242,
     "addresses": "V. Kudirkos  g. 99",
-    "action_place_names": "Respublikinė Šiaulių ligoninė",
+    "name": "Respublikinė Šiaulių ligoninė",
     "city": "Šiauliai",
     "Time": "3/17/2020 19:00",
     "latitude": 55.94290225,
@@ -2533,7 +2533,7 @@
   {
     "id": 243,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/13/2020 10:30",
     "latitude": 54.6430534,
@@ -2543,7 +2543,7 @@
   {
     "id": 244,
     "addresses": "Vilniaus  g. 47B",
-    "action_place_names": "Norfa",
+    "name": "Norfa",
     "city": "Joniškis",
     "Time": "3/14/2020 16:00",
     "latitude": 56.2279963,
@@ -2553,7 +2553,7 @@
   {
     "id": 245,
     "addresses": "Vilniaus  g. 40",
-    "action_place_names": "Senukai",
+    "name": "Senukai",
     "city": "Joniškis",
     "Time": "3/15/2020 12:00",
     "latitude": 56.231699600000006,
@@ -2563,7 +2563,7 @@
   {
     "id": 246,
     "addresses": "Vytauto  g. 51",
-    "action_place_names": "Palangos Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
+    "name": "Palangos Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
     "city": "Palanga",
     "Time": "3/14/2020 15:00",
     "latitude": 55.9177779,
@@ -2573,7 +2573,7 @@
   {
     "id": 247,
     "addresses": "Venecijos  akl. 2",
-    "action_place_names": "Atostogų parke",
+    "name": "Atostogų parke",
     "city": "Žibininkų k.,",
     "Time": "3/14/2020 12:00",
     "latitude": 55.95819,
@@ -2583,7 +2583,7 @@
   {
     "id": 248,
     "addresses": "V. Kudirkos  g. 99",
-    "action_place_names": "Respublikinė Šiaulių ligoninė",
+    "name": "Respublikinė Šiaulių ligoninė",
     "city": "Šiauliai",
     "Time": "3/21/2020 12:00",
     "latitude": 55.94290225,
@@ -2593,7 +2593,7 @@
   {
     "id": 249,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/13/2020 10:30",
     "latitude": 54.6430534,
@@ -2603,7 +2603,7 @@
   {
     "id": 250,
     "addresses": "Venecijos  akl. 2",
-    "action_place_names": "Atostogų parke",
+    "name": "Atostogų parke",
     "city": "Žibininkų k.,",
     "Time": "3/14/2020 12:00",
     "latitude": 55.95819,
@@ -2613,7 +2613,7 @@
   {
     "id": 251,
     "addresses": "Vytauto  g. 101",
-    "action_place_names": "Šiaulių centro poliklinika",
+    "name": "Šiaulių centro poliklinika",
     "city": "Šiauliai",
     "Time": "3/20/2020 12:00",
     "latitude": 55.928490599999996,
@@ -2623,7 +2623,7 @@
   {
     "id": 252,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/13/2020 10:30",
     "latitude": 54.6430534,
@@ -2633,7 +2633,7 @@
   {
     "id": 253,
     "addresses": "Vytauto  g. 51",
-    "action_place_names": "Palangos Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
+    "name": "Palangos Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
     "city": "Palanga",
     "Time": "3/14/2020 15:00",
     "latitude": 55.9177779,
@@ -2643,7 +2643,7 @@
   {
     "id": 254,
     "addresses": "Venecijos  akl. 2",
-    "action_place_names": "Atostogų parke",
+    "name": "Atostogų parke",
     "city": "Žibininkų k.,",
     "Time": "3/14/2020 12:00",
     "latitude": 55.95819,
@@ -2653,7 +2653,7 @@
   {
     "id": 255,
     "addresses": "Upytės  g. 19",
-    "action_place_names": "Maxima",
+    "name": "Maxima",
     "city": "Joniškis",
     "Time": "3/18/2020 12:00",
     "latitude": 56.2399637,
@@ -2663,7 +2663,7 @@
   {
     "id": 256,
     "addresses": "Vytauto  g. 51",
-    "action_place_names": "Palangos Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
+    "name": "Palangos Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
     "city": "Palanga",
     "Time": "3/14/2020 15:00",
     "latitude": 55.9177779,
@@ -2673,7 +2673,7 @@
   {
     "id": 257,
     "addresses": "Venecijos  akl. 2",
-    "action_place_names": "Atostogų parke",
+    "name": "Atostogų parke",
     "city": "Žibininkų k.,",
     "Time": "3/14/2020 12:00",
     "latitude": 55.95819,
@@ -2683,7 +2683,7 @@
   {
     "id": 258,
     "addresses": "Vytauto  g. 51",
-    "action_place_names": "Palangos Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
+    "name": "Palangos Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
     "city": "Palanga",
     "Time": "3/14/2020 15:00",
     "latitude": 55.9177779,
@@ -2693,7 +2693,7 @@
   {
     "id": 259,
     "addresses": "Venecijos  akl. 2",
-    "action_place_names": "Atostogų parke",
+    "name": "Atostogų parke",
     "city": "Žibininkų k.,",
     "Time": "3/14/2020 12:00",
     "latitude": 55.95819,
@@ -2703,7 +2703,7 @@
   {
     "id": 260,
     "addresses": "Vytauto  g. 51",
-    "action_place_names": "Palangos Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
+    "name": "Palangos Švč. Mergelės Marijos Ėmimo į dangų bažnyčia",
     "city": "Palanga",
     "Time": "3/14/2020 15:00",
     "latitude": 55.9177779,
@@ -2713,7 +2713,7 @@
   {
     "id": 261,
     "addresses": "Venecijos  akl. 2",
-    "action_place_names": "Atostogų parke",
+    "name": "Atostogų parke",
     "city": "Žibininkų k.,",
     "Time": "3/14/2020 12:00",
     "latitude": 55.95819,
@@ -2723,7 +2723,7 @@
   {
     "id": 262,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/13/2020 10:30",
     "latitude": 54.6430534,
@@ -2733,7 +2733,7 @@
   {
     "id": 263,
     "addresses": "V. Kudirkos  g. 99",
-    "action_place_names": "Respublikinė Šiaulių ligoninė",
+    "name": "Respublikinė Šiaulių ligoninė",
     "city": "Šiauliai",
     "Time": "3/25/2020 12:00",
     "latitude": 55.94290225,
@@ -2743,7 +2743,7 @@
   {
     "id": 264,
     "addresses": "V. Kudirkos  g. 99",
-    "action_place_names": "Respublikinė Šiaulių ligoninė",
+    "name": "Respublikinė Šiaulių ligoninė",
     "city": "Šiauliai",
     "Time": "3/27/2020 12:00",
     "latitude": 55.94290225,
@@ -2753,7 +2753,7 @@
   {
     "id": 265,
     "addresses": "Baltijos pr. 40",
-    "action_place_names": "Klaipėdos jūrų uostas",
+    "name": "Klaipėdos jūrų uostas",
     "city": "Klaipėda",
     "Time": "3/27/2020 12:00",
     "latitude": 55.6854645,
@@ -2763,7 +2763,7 @@
   {
     "id": 266,
     "addresses": "V. Kudirkos  g. 99",
-    "action_place_names": "Respublikinė Šiaulių Ligoninė",
+    "name": "Respublikinė Šiaulių Ligoninė",
     "city": "Šiauliai",
     "Time": "3/29/2020 12:00",
     "latitude": 55.94290225,
@@ -2773,7 +2773,7 @@
   {
     "id": 267,
     "addresses": "Oro uosto g. 4",
-    "action_place_names": "Kauno oro uostas",
+    "name": "Kauno oro uostas",
     "city": "Kaunas",
     "Time": "3/24/2020 12:00",
     "latitude": 54.967318000000006,
@@ -2783,7 +2783,7 @@
   {
     "id": 268,
     "addresses": "Venecijos  akl. 2",
-    "action_place_names": "Atostogų parką",
+    "name": "Atostogų parką",
     "city": "Žibininkų k.,",
     "Time": "3/14/2020 15:00",
     "latitude": 55.95819,
@@ -2793,7 +2793,7 @@
   {
     "id": 269,
     "addresses": "Oro uosto g. 4",
-    "action_place_names": "Kauno oro uostas",
+    "name": "Kauno oro uostas",
     "city": "Kaunas",
     "Time": "3/14/2020 18:00",
     "latitude": 54.967318000000006,
@@ -2803,7 +2803,7 @@
   {
     "id": 270,
     "addresses": "Pulko  g. 51",
-    "action_place_names": "Rimi",
+    "name": "Rimi",
     "city": "Alytus",
     "Time": "3/25/2020 15:30",
     "latitude": 54.3878596,
@@ -2813,7 +2813,7 @@
   {
     "id": 271,
     "addresses": "Naujoji  g. 2c.",
-    "action_place_names": "IKI",
+    "name": "IKI",
     "city": "Alytus",
     "Time": "3/22/2020 12:00",
     "latitude": 54.3964522,
@@ -2823,7 +2823,7 @@
   {
     "id": 272,
     "addresses": "Liepojos pl. 1",
-    "action_place_names": "Palangos oro uostas",
+    "name": "Palangos oro uostas",
     "city": "Palanga",
     "Time": "3/17/2020 18:00",
     "latitude": 55.97145935,
@@ -2833,7 +2833,7 @@
   {
     "id": 273,
     "addresses": "Liepojos pl. 1",
-    "action_place_names": "Palangos oro uostas",
+    "name": "Palangos oro uostas",
     "city": "Palanga",
     "Time": "3/24/2020 18:00",
     "latitude": 55.97145935,
@@ -2843,7 +2843,7 @@
   {
     "id": 274,
     "addresses": "Liepojos pl. 1",
-    "action_place_names": "Palangos oro uostas",
+    "name": "Palangos oro uostas",
     "city": "Palanga",
     "Time": "3/24/2020 18:00",
     "latitude": 55.97145935,
@@ -2853,7 +2853,7 @@
   {
     "id": 275,
     "addresses": "Baltijos pr. 40",
-    "action_place_names": "Klaipėdos jūrų uostas",
+    "name": "Klaipėdos jūrų uostas",
     "city": "Klaipėda",
     "Time": "3/17/2020 12:00",
     "latitude": 55.6854645,
@@ -2863,7 +2863,7 @@
   {
     "id": 276,
     "addresses": "Statybininkų  pr.",
-    "action_place_names": "Grūstė",
+    "name": "Grūstė",
     "city": "Klaipėda",
     "Time": "3/18/2020 12:00",
     "latitude": 55.6746394,
@@ -2873,7 +2873,7 @@
   {
     "id": 277,
     "addresses": "Taikos  pr. 141",
-    "action_place_names": "Maxima",
+    "name": "Maxima",
     "city": "Klaipėda",
     "Time": "3/29/2020 12:00",
     "latitude": 55.6633801,
@@ -2883,7 +2883,7 @@
   {
     "id": 278,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/24/2020 14:00",
     "latitude": 54.6430534,
@@ -2893,7 +2893,7 @@
   {
     "id": 279,
     "addresses": "Naujoji  g. 4",
-    "action_place_names": "Varduvos",
+    "name": "Varduvos",
     "city": "Mažeikiai",
     "Time": "3/14/2020 12:00",
     "latitude": 56.3163304,
@@ -2903,7 +2903,7 @@
   {
     "id": 280,
     "addresses": "Oro uosto g. 4",
-    "action_place_names": "Kauno oro uostas",
+    "name": "Kauno oro uostas",
     "city": "Kaunas",
     "Time": "3/24/2020 12:00",
     "latitude": 54.967318000000006,
@@ -2913,7 +2913,7 @@
   {
     "id": 281,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/16/2020 12:00",
     "latitude": 54.6430534,
@@ -2923,7 +2923,7 @@
   {
     "id": 282,
     "addresses": "Lidl Dūkštų  g. 34",
-    "action_place_names": "Lidl",
+    "name": "Lidl",
     "city": "Vilnius",
     "Time": "3/17/2020 20:00",
     "latitude": 54.71210010000001,
@@ -2933,7 +2933,7 @@
   {
     "id": 283,
     "addresses": "Žygio  g. 90",
-    "action_place_names": "Biloja",
+    "name": "Biloja",
     "city": "Vilnius",
     "Time": "3/20/2020 12:00",
     "latitude": 54.7097427,
@@ -2943,7 +2943,7 @@
   {
     "id": 284,
     "addresses": "Respublikos a. 11",
-    "action_place_names": "Aibė",
+    "name": "Aibė",
     "city": "Kavarsakas",
     "Time": "3/18/2020 12:00",
     "latitude": 55.4335801,
@@ -2953,7 +2953,7 @@
   {
     "id": 285,
     "addresses": "Alyvų  g. 8",
-    "action_place_names": "Alaus kelias",
+    "name": "Alaus kelias",
     "city": "Biržų k.",
     "Time": "3/12/2020 13:00",
     "latitude": 56.2077348,
@@ -2963,7 +2963,7 @@
   {
     "id": 286,
     "addresses": "Respublikos  g. 2E",
-    "action_place_names": "Norfa",
+    "name": "Norfa",
     "city": "Biržai.",
     "Time": "3/13/2020 12:00",
     "latitude": 56.193684,
@@ -2973,7 +2973,7 @@
   {
     "id": 287,
     "addresses": "Vilniaus  g. 115",
-    "action_place_names": "Biržų Ligoninė",
+    "name": "Biržų Ligoninė",
     "city": "Biržai.",
     "Time": "3/15/2020 8:30",
     "latitude": 56.188583200000004,
@@ -2983,7 +2983,7 @@
   {
     "id": 288,
     "addresses": "Vytauto  g. 114",
-    "action_place_names": "Autoservisas",
+    "name": "Autoservisas",
     "city": "Biržai.",
     "Time": "3/13/2020 12:00",
     "latitude": 56.202352000000005,
@@ -2993,7 +2993,7 @@
   {
     "id": 289,
     "addresses": "Plento  g. 27B",
-    "action_place_names": "Techninės apžiūros stotis",
+    "name": "Techninės apžiūros stotis",
     "city": "Biržai.",
     "Time": "3/19/2020 15:00",
     "latitude": 56.185736399999996,
@@ -3003,7 +3003,7 @@
   {
     "id": 290,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/19/2020 12:00",
     "latitude": 54.6430534,
@@ -3013,7 +3013,7 @@
   {
     "id": 291,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/19/2020 12:00",
     "latitude": 54.6430534,
@@ -3023,7 +3023,7 @@
   {
     "id": 292,
     "addresses": "Vytauto  pr. 24",
-    "action_place_names": "Vaistinė",
+    "name": "Vaistinė",
     "city": "Kaunas",
     "Time": "3/26/2020 12:00",
     "latitude": 54.88943149999999,
@@ -3033,7 +3033,7 @@
   {
     "id": 293,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/24/2020 20:00",
     "latitude": 54.6430534,
@@ -3043,7 +3043,7 @@
   {
     "id": 294,
     "addresses": "Venecijos  akl. 2",
-    "action_place_names": "Atostogų parkas",
+    "name": "Atostogų parkas",
     "city": "Žibininkų k.,",
     "Time": "3/14/2020 15:00",
     "latitude": 55.95819,
@@ -3053,7 +3053,7 @@
   {
     "id": 295,
     "addresses": "Oro uosto g. 4",
-    "action_place_names": "Kauno oro uostas",
+    "name": "Kauno oro uostas",
     "city": "Kaunas",
     "Time": "3/14/2020 12:00",
     "latitude": 54.967318000000006,
@@ -3063,7 +3063,7 @@
   {
     "id": 296,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/19/2020 12:00",
     "latitude": 54.6430534,
@@ -3073,7 +3073,7 @@
   {
     "id": 297,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/19/2020 12:00",
     "latitude": 54.6430534,
@@ -3083,7 +3083,7 @@
   {
     "id": 298,
     "addresses": "Rodūnios kl. 10A",
-    "action_place_names": "Vilniaus oro uostas",
+    "name": "Vilniaus oro uostas",
     "city": "Vilnius",
     "Time": "3/22/2020 19:00",
     "latitude": 54.6430534,
