@@ -4,7 +4,7 @@ import './Footer.css';
 export function UpdateInfo() {
   return (
     <>
-      <p className="info-text">Paskutinį kartą atnaujinta: 2020-04-04</p>
+      <p className="info-text">Paskutinį kartą atnaujinta: 2020-04-06</p>
       <p className="info-text">
         Tinklalapį sukurė "Tracking Virus Not People" komanda.
       </p>
