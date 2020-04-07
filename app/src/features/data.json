@@ -3309,5 +3309,126 @@
     "longitude": 22.3400074,
     "timestamp": 1585054800.0,
     "case_id": 318
+  },
+  {
+    "id": 319,
+    "address": "Šeškinės  g. 24",
+    "name": "Gintarinė vaistinė",
+    "city": "Vilnius",
+    "time": "3/25/2020 12:00",
+    "latitude": 54.7162156,
+    "longitude": 25.2487041,
+    "timestamp": 1585130400.0,
+    "case_id": 322
+  },
+  {
+    "id": 320,
+    "address": "V. Kudirkos  g. 99",
+    "name": "Šiaulių Respublikinė Ligoninė",
+    "city": "Šiauliai",
+    "time": "4/2/2020 12:00",
+    "latitude": 55.942752,
+    "longitude": 23.302855800000003,
+    "timestamp": 1585818000.0,
+    "case_id": 325
+  },
+  {
+    "id": 321,
+    "address": "Vilniaus  g. 51",
+    "name": "Viada",
+    "city": "Joniškis",
+    "time": "3/28/2020 21:00",
+    "latitude": 56.224394999999994,
+    "longitude": 23.6009069,
+    "timestamp": 1585422000.0,
+    "case_id": 327
+  },
+  {
+    "id": 322,
+    "address": "Rodūnios kl. 10A",
+    "name": "Vilniaus oro uostas",
+    "city": "Vilnius",
+    "time": "3/24/2020 14:00",
+    "latitude": 54.6430534,
+    "longitude": 25.2810443,
+    "timestamp": 1585051200.0,
+    "case_id": 351
+  },
+  {
+    "id": 323,
+    "address": "Daugai, Vytauto  g. 5",
+    "name": "Euro",
+    "city": "Alytaus r..",
+    "time": "4/4/2020 12:00",
+    "latitude": 54.3635532,
+    "longitude": 24.344428699999998,
+    "timestamp": 1585990800.0,
+    "case_id": 365
+  },
+  {
+    "id": 324,
+    "address": "Minsko pl. 3",
+    "name": "Norfa",
+    "city": "Vilnius.",
+    "time": "3/27/2020 11:00",
+    "latitude": 54.65243910000001,
+    "longitude": 25.3047605,
+    "timestamp": 1585299600.0,
+    "case_id": 366
+  },
+  {
+    "id": 325,
+    "address": "Gelvonų  g. 35",
+    "name": "Maxima",
+    "city": "Vilnius.",
+    "time": "3/23/2020 12:00",
+    "latitude": 54.717830000000006,
+    "longitude": 25.258374399999997,
+    "timestamp": 1584957600.0,
+    "case_id": 367
+  },
+  {
+    "id": 326,
+    "address": "Antakalnio  g. 72",
+    "name": "Cesta",
+    "city": "Vilnius.",
+    "time": "3/23/2020 15:00",
+    "latitude": 54.7100291,
+    "longitude": 25.3137338,
+    "timestamp": 1584968400.0,
+    "case_id": 369
+  },
+  {
+    "id": 327,
+    "address": "Gedimino  g. 8",
+    "name": "Norfa",
+    "city": "Telšiai",
+    "time": "3/20/2020 12:00",
+    "latitude": 55.982313100000006,
+    "longitude": 22.238255600000002,
+    "timestamp": 1584698400.0,
+    "case_id": 373
+  },
+  {
+    "id": 328,
+    "address": "-",
+    "name": "Jomantų takas",
+    "city": "Telšiai",
+    "time": "3/26/2020 12:00",
+    "latitude": 55.8777376,
+    "longitude": 22.3555499,
+    "timestamp": 1585216800.0,
+    "case_id": 373
+  },
+  {
+    "id": 329,
+    "address": "Gedimino g. 8",
+    "name": "Norfa",
+    "city": "Telšiai",
+    "time": "3/31/2020 12:00",
+    "latitude": 55.982313100000006,
+    "longitude": 22.238255600000002,
+    "timestamp": 1585645200.0,
+    "case_id": 373
   }
 ]
