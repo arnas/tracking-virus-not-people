@@ -6,6 +6,7 @@ import driveIn from './drive-in.json';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
 import { getDate } from './utils/dateUtils';
 import moment from 'moment';
+import { Legend } from './site/Legend';
 const L = require('leaflet');
 
 const TILE_LAYER_ATTRIBUTION =
@@ -14,6 +15,9 @@ const TILE_LAYER_URL =
   'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png';
 
 export function CoronaMap() {
+  const [viewMarkers, setViewMarkers] = useState(true);
+  const [viewDriveIns, setViewDriveIns] = useState(true);
+
   const position = [55.2854062, 23.9327383];
   const [initialRadius, setRadius] = useState(4000);
   const initialZoom = 8;
@@ -93,9 +97,16 @@ export function CoronaMap() {
       minZoom={minZoom}
       onzoomend={() => renderMarkers()}
     >
+      <Legend 
+        viewDriveIns={viewDriveIns} 
+        setViewDriveIns={setViewDriveIns} 
+        viewMarkers={viewMarkers} 
+        setViewMarkers={setViewMarkers} />
       <TileLayer attribution={TILE_LAYER_ATTRIBUTION} url={TILE_LAYER_URL} />
-      {renderDriveIns()}
+      {viewDriveIns && 
+        renderDriveIns()}
       {
+        viewMarkers &&
         <MarkerClusterGroup showCoverageOnHover={false}>
           {data.map((item) => (
             <Circle
