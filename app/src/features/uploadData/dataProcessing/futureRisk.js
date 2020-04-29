@@ -6,9 +6,7 @@ const getFutureRiskScores = (places) => {
   const quarantinePlaces = places.filter(
     (p) => p.visitStartTs > QUARANTINE_START
   );
-  //   const timeSpentAtHome = quarantinePlaces
-  //     .filter(p => homePlacesNames.indexOf(p.location.name) !== -1)
-  //     .reduce((sum, p) => sum + p.timeSpent, 0);
+
   const daysFromQuarantineStart =
     (new Date().getTime() / 1000 - QUARANTINE_START) / 86400;
 
@@ -28,9 +26,6 @@ const getFutureRiskScores = (places) => {
     ((12 * daysFromQuarantineStart - hoursSpentAtPublicPlaces) /
       (12 * daysFromQuarantineStart)) *
     100;
-
-  console.log('Public places:');
-  console.log(publicPlaces);
 
   return {
     percentageAtHome,

@@ -77,8 +77,6 @@ const visitedColumns = [
 ];
 
 export function ResultDisplay(props) {
-  console.log(props);
-
   const percentageAtHome =
     props.score.percentageAtHome != null
       ? props.score.percentageAtHome.toFixed(2)
