@@ -6,6 +6,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.legend-img {
+  margin-left: 8px;
+}
+
 @media screen and (max-width: 800px) {
   .legend {
     display: none;
