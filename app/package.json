@@ -17,7 +17,7 @@
     "react-ga": "^2.7.0",
     "react-leaflet": "^2.6.3",
     "react-leaflet-markercluster": "^2.0.0-rc3",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "shortid": "^2.2.15"
   },
   "scripts": {
